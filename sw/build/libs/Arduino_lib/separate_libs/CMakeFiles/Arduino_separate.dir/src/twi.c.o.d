@@ -1,0 +1,35 @@
+libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/twi.c.o: \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/separate_libs/src/twi.c \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/math.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/reent.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/_ansi.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/newlib.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/config.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/machine/ieeefp.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/features.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/lib/gcc/riscv32-unknown-elf/5.2.0/include/stddef.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/_types.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/machine/_types.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/machine/_default_types.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/lock.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/_ansi.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/stdlib.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/cdefs.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/machine/stdlib.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/alloca.h \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/separate_libs/inc/twi.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/inttypes.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/_intsup.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/lib/gcc/riscv32-unknown-elf/5.2.0/include/stdint.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/stdint.h \
+ /home/ahmed98/pulpino/sw/libs/sys_lib/inc/int.h \
+ /home/ahmed98/pulpino/sw/libs/sys_lib/inc/event.h \
+ /home/ahmed98/pulpino/sw/libs/sys_lib/inc/pulpino.h \
+ /home/ahmed98/pulpino/sw/libs/sys_lib/inc/i2c.h \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/core_libs/inc/Arduino.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/lib/gcc/riscv32-unknown-elf/5.2.0/include/stdbool.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/string.h \
+ /home/ahmed98/ri5cy_gnu_toolchain/install/riscv32-unknown-elf/include/sys/string.h \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/core_libs/inc/binary.h \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/core_libs/inc/pins_arduino.h \
+ /home/ahmed98/pulpino/sw/libs/Arduino_lib/core_libs/inc/pins_arduino.h

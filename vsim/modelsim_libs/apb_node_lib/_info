@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmed98/pulpino/vsim
+vapb_node
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1683790790
+!i10b 1
+!s100 bUF`bOFQS8kn4Bk;coA_=0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I70f@knX5Ha65=Vz@Xe@gA0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1683732572
+8/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node.sv
+F/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node.sv
+!i122 0
+L0 23 148
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1683790790.000000
+!s107 /home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/apb_node_lib|/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node.sv|
+!i113 1
+Z6 o-suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/apb_node_lib
+Z7 tCvgOpt 0
+vapb_node_wrap
+R1
+!s110 1683790791
+!i10b 1
+!s100 g]2oiGOhOd<`AdkFl63kl3
+R2
+IMFW:OMkWlaeED21<>obCz0
+R3
+S1
+R0
+w1683676407
+8/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node_wrap.sv
+!i122 1
+L0 23 78
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node_wrap.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/apb_node_lib|/home/ahmed98/pulpino/vsim/..//ips/apb/apb_node/apb_node_wrap.sv|
+!i113 1
+R6
+R7

@@ -1,0 +1,337 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmed98/pulpino/vsim
+vi2c_buf
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683790799
+!i10b 1
+!s100 7SbEde`eS;1?[z<;Igg7_2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ig`9HBDmg^inG0g@iLScOa0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1683735550
+Z6 8/home/ahmed98/pulpino/vsim/..//tb/i2c_eeprom_model.sv
+Z7 F/home/ahmed98/pulpino/vsim/..//tb/i2c_eeprom_model.sv
+!i122 4
+L0 22 20
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1683790799.000000
+Z10 !s107 /home/ahmed98/pulpino/vsim/..//tb/i2c_eeprom_model.sv|
+Z11 !s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|/home/ahmed98/pulpino/vsim/..//tb/i2c_eeprom_model.sv|
+!i113 1
+Z12 o-quiet -sv -work work
+Z13 !s92 -quiet -sv -work work +incdir+/home/ahmed98/pulpino/vsim/..//tb
+Z14 tCvgOpt 0
+vi2c_eeprom_model
+R1
+Z15 DXx4 work 13 pkg_i2c_model 0 22 m7PhgkP`081zMk89c=CZV1
+R2
+!i10b 1
+!s100 ;Q:R4abWG0HFhBN0cOih_2
+R3
+Icfg@fTh@2gZ?n`J6ZWnD23
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 4
+L0 247 162
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vi2c_model_phy
+R1
+R15
+R2
+!i10b 1
+!s100 GB^;]0`aN>YF0Il<8mSTW3
+R3
+IK6=5P3MSco67X@aCMlXER1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 4
+L0 43 203
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vjtag_dpi
+R1
+Z16 !s110 1683790800
+!i10b 1
+!s100 9:SWNY5HR5S33_B0ZE@6@0
+R3
+IUZME_bXFaTPdVTI[[Dbo01
+R4
+S1
+R0
+Z17 w1677614242
+8/home/ahmed98/pulpino/vsim/..//tb/jtag_dpi.sv
+F/home/ahmed98/pulpino/vsim/..//tb/jtag_dpi.sv
+!i122 6
+L0 44 73
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//tb/jtag_dpi.sv|
+!s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|-dpiheader|/home/ahmed98/pulpino/vsim/..//tb/jtag_dpi/dpiheader.h|/home/ahmed98/pulpino/vsim/..//tb/jtag_dpi.sv|
+!i113 1
+R12
+R13
+R14
+Yjtag_i
+Z18 !s105 tb_sv_unit
+Z19 DXx4 work 10 tb_sv_unit 0 22 nlE66m[f_N;:KU_l]44OZ0
+R1
+R16
+!i10b 1
+!s100 1YQI^k9`XPK>?HGga?A<Z3
+R3
+IJlfKCL_mm6OLb[1iM8Aoz3
+R4
+S1
+R0
+R17
+8/home/ahmed98/pulpino/vsim/..//tb/tb_jtag_pkg.sv
+Z20 F/home/ahmed98/pulpino/vsim/..//tb/tb_jtag_pkg.sv
+!i122 7
+L0 22 0
+R8
+r1
+!s85 0
+31
+Z21 !s108 1683790800.000000
+!s107 /home/ahmed98/pulpino/vsim/..//tb/mem_dpi.svh|/home/ahmed98/pulpino/vsim/..//tb/spi_debug_test.svh|/home/ahmed98/pulpino/vsim/..//tb/tb_mem_pkg.sv|/home/ahmed98/pulpino/vsim/..//tb/tb_spi_pkg.sv|/home/ahmed98/pulpino/vsim/..//tb/tb_jtag_pkg.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes//config.sv|/home/ahmed98/pulpino/vsim/..//tb/tb.sv|
+Z22 !s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes/|-dpiheader|/home/ahmed98/pulpino/vsim/..//tb/mem_dpi/dpiheader.h|/home/ahmed98/pulpino/vsim/..//tb/tb.sv|
+!i113 1
+R12
+Z23 !s92 -quiet -sv -work work +incdir+/home/ahmed98/pulpino/vsim/..//tb +incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes/
+R14
+Xpkg_i2c_model
+R1
+R2
+!i10b 1
+!s100 _X8HY[?Iee@8?1NNlEQEO1
+R3
+Im7PhgkP`081zMk89c=CZV1
+Vm7PhgkP`081zMk89c=CZV1
+S1
+R0
+R5
+R6
+R7
+!i122 4
+L0 12 0
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+Xpkg_spi_sv_unit
+!s115 spi_bus_master
+R1
+R2
+V;9QTk?WB:ec86mNV1YAcU2
+r1
+!s85 0
+!i10b 1
+!s100 O1:Fg7>jhR2gOzQR63N8G0
+I;9QTk?WB:ec86mNV1YAcU2
+!i103 1
+S1
+R0
+R17
+8/home/ahmed98/pulpino/vsim/..//tb/pkg_spi.sv
+F/home/ahmed98/pulpino/vsim/..//tb/pkg_spi.sv
+!i122 0
+L0 10 0
+R8
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//tb/pkg_spi.sv|
+!s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|/home/ahmed98/pulpino/vsim/..//tb/pkg_spi.sv|
+!i113 1
+R12
+R13
+R14
+Yspi_bus_master
+R1
+R2
+!i10b 1
+!s100 B`Rc:d_bnClSFc@Vfo<;E1
+R3
+ILW_8<PVWDii7aUM3Ec<L:3
+R4
+S1
+R0
+R17
+8/home/ahmed98/pulpino/vsim/..//tb/if_spi_master.sv
+F/home/ahmed98/pulpino/vsim/..//tb/if_spi_master.sv
+!i122 2
+Z24 L0 11 0
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//tb/if_spi_master.sv|
+!s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|/home/ahmed98/pulpino/vsim/..//tb/if_spi_master.sv|
+!i113 1
+R12
+R13
+R14
+Yspi_slave
+R1
+R2
+!i10b 1
+!s100 EbMAY7=GI=^`Ioj=Ib_hJ1
+R3
+IbkfMGTZY0Dco8g[7CXH6j0
+R4
+S1
+R0
+R17
+8/home/ahmed98/pulpino/vsim/..//tb/if_spi_slave.sv
+F/home/ahmed98/pulpino/vsim/..//tb/if_spi_slave.sv
+!i122 1
+R24
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//tb/if_spi_slave.sv|
+!s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|/home/ahmed98/pulpino/vsim/..//tb/if_spi_slave.sv|
+!i113 1
+R12
+R13
+R14
+vtb
+R1
+R19
+R16
+R4
+r1
+!s85 0
+!i94 1
+!i10b 1
+!s100 1_Mf6@7azJcaGWK@7Z0eD0
+IYZl?CQdhDK0BN9ZP^Ua4K0
+R18
+S1
+R0
+R17
+Z25 8/home/ahmed98/pulpino/vsim/..//tb/tb.sv
+Z26 F/home/ahmed98/pulpino/vsim/..//tb/tb.sv
+F/home/ahmed98/pulpino/vsim/..//tb/tb_spi_pkg.sv
+F/home/ahmed98/pulpino/vsim/..//tb/tb_mem_pkg.sv
+F/home/ahmed98/pulpino/vsim/..//tb/spi_debug_test.svh
+F/home/ahmed98/pulpino/vsim/..//tb/mem_dpi.svh
+!i122 7
+L0 21 3400
+R8
+31
+R21
+Z27 !s107 /home/ahmed98/pulpino/vsim/..//tb/mem_dpi.svh|/home/ahmed98/pulpino/vsim/..//tb/spi_debug_test.svh|/home/ahmed98/pulpino/vsim/..//tb/tb_mem_pkg.sv|/home/ahmed98/pulpino/vsim/..//tb/tb_spi_pkg.sv|/home/ahmed98/pulpino/vsim/..//tb/tb_jtag_pkg.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes//config.sv|/home/ahmed98/pulpino/vsim/..//tb/tb.sv|
+R22
+!i113 1
+R12
+R23
+R14
+Xtb_sv_unit
+!s115 jtag_i
+R1
+R16
+VnlE66m[f_N;:KU_l]44OZ0
+r1
+!s85 0
+!i10b 1
+!s100 o<XMLJJh9R<>`eiGc@cWL0
+InlE66m[f_N;:KU_l]44OZ0
+!i103 1
+S1
+R0
+R17
+R25
+R26
+F/home/ahmed98/pulpino/vsim/..//rtl/includes//config.sv
+R20
+!i122 7
+L0 30 0
+R8
+31
+R21
+R27
+R22
+!i113 1
+R12
+R23
+R14
+Yuart_bus
+R1
+R2
+!i10b 1
+!s100 JQb5X;>O_YQjkV^aGETeH1
+R3
+Id]_Pg65801:64YUQWn:RR3
+R4
+S1
+R0
+R17
+8/home/ahmed98/pulpino/vsim/..//tb/uart.sv
+F/home/ahmed98/pulpino/vsim/..//tb/uart.sv
+!i122 3
+L0 14 0
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//tb/uart.sv|
+!s90 -quiet|-sv|-work|work|+incdir+/home/ahmed98/pulpino/vsim/..//tb|/home/ahmed98/pulpino/vsim/..//tb/uart.sv|
+!i113 1
+R12
+R13
+R14

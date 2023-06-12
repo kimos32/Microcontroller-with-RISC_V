@@ -1,0 +1,1630 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmed98/pulpino/vsim
+vadders
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 DXx4 work 13 fpu_defs_fmac 0 22 AYGaNJAlozFjaZ2VEclYz2
+DXx4 work 14 adders_sv_unit 0 22 XeOQP;UIO_n=1NPchT8PW1
+Z3 !s110 1683790793
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 A8>cI2mZo7lKmdoK[McKe1
+IOh_Alo1J_k9kzOhL@;@BE0
+!s105 adders_sv_unit
+S1
+R0
+Z5 w1677614624
+Z6 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/adders.sv
+Z7 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/adders.sv
+!i122 28
+L0 33 51
+Z8 OV;L;2020.1;71
+31
+Z9 !s108 1683790793.000000
+Z10 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/adders.sv|
+Z11 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/adders.sv|
+!i113 1
+Z12 o-suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib
+Z13 !s92 -suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib +incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.
+Z14 tCvgOpt 0
+Xadders_sv_unit
+R1
+R2
+R3
+VXeOQP;UIO_n=1NPchT8PW1
+r1
+!s85 0
+!i10b 1
+!s100 5Gg5@M]X_0bMOAAL:TNBG2
+IXeOQP;UIO_n=1NPchT8PW1
+!i103 1
+S1
+R0
+R5
+R6
+R7
+!i122 28
+Z15 L0 31 0
+R8
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+valigner
+R1
+R2
+DXx4 work 15 aligner_sv_unit 0 22 V_K]i6Ojj2:aXW0b2^J=61
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 a5<[OL<U@?V[NUOHd2B7Y2
+ISVAXn63TBb<Z2i]B4@XmU1
+!s105 aligner_sv_unit
+S1
+R0
+R5
+Z16 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/aligner.sv
+Z17 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/aligner.sv
+!i122 26
+L0 33 47
+R8
+31
+R9
+Z18 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/aligner.sv|
+Z19 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/aligner.sv|
+!i113 1
+R12
+R13
+R14
+Xaligner_sv_unit
+R1
+R2
+R3
+VV_K]i6Ojj2:aXW0b2^J=61
+r1
+!s85 0
+!i10b 1
+!s100 1CH2eCJiinkDQSMgW>nzH0
+IV_K]i6Ojj2:aXW0b2^J=61
+!i103 1
+S1
+R0
+R5
+R16
+R17
+!i122 26
+R15
+R8
+31
+R9
+R18
+R19
+!i113 1
+R12
+R13
+R14
+vbooth_encoder
+R1
+R2
+DXx4 work 21 booth_encoder_sv_unit 0 22 4IRRTaGd7@k<8oKeimPBc1
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 GAnc40E@X^4e8zL<Jh7n`3
+I?]>;N;DTRo=:lgzaQ@UDo1
+!s105 booth_encoder_sv_unit
+S1
+R0
+R5
+Z20 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_encoder.sv
+Z21 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_encoder.sv
+!i122 22
+L0 34 17
+R8
+31
+R9
+Z22 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_encoder.sv|
+Z23 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_encoder.sv|
+!i113 1
+R12
+R13
+R14
+Xbooth_encoder_sv_unit
+R1
+R2
+R3
+V4IRRTaGd7@k<8oKeimPBc1
+r1
+!s85 0
+!i10b 1
+!s100 >9<RbIaD75_VHE0GWUo;L3
+I4IRRTaGd7@k<8oKeimPBc1
+!i103 1
+S1
+R0
+R5
+R20
+R21
+!i122 22
+Z24 L0 32 0
+R8
+31
+R9
+R22
+R23
+!i113 1
+R12
+R13
+R14
+vbooth_selector
+R1
+R2
+DXx4 work 22 booth_selector_sv_unit 0 22 `Q=[Z26z:0zG3IV2=fV<@3
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 Ni<Vk^Oih=k[TNTj`=QK?2
+IbXR^LRK9Y2SEM1@GHOFJ70
+!s105 booth_selector_sv_unit
+S1
+R0
+R5
+Z25 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_selector.sv
+Z26 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_selector.sv
+!i122 23
+L0 34 13
+R8
+31
+R9
+Z27 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_selector.sv|
+Z28 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/booth_selector.sv|
+!i113 1
+R12
+R13
+R14
+Xbooth_selector_sv_unit
+R1
+R2
+R3
+V`Q=[Z26z:0zG3IV2=fV<@3
+r1
+!s85 0
+!i10b 1
+!s100 ]2gzA<K7b9_15g>S<Qk_o3
+I`Q=[Z26z:0zG3IV2=fV<@3
+!i103 1
+S1
+R0
+R5
+R25
+R26
+!i122 23
+R24
+R8
+31
+R9
+R27
+R28
+!i113 1
+R12
+R13
+R14
+vcontrol_tp
+R1
+Z29 DXx4 work 20 fpu_defs_div_sqrt_tp 0 22 k5G?fOl9GRIjE:^E^g@lM2
+DXx4 work 18 control_tp_sv_unit 0 22 L^eGRPCC9;TLWnS8naP_Q2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 j4ilN:Q:CQS;ce?AmnTfT1
+IjHEece02k45]f`lSzG<071
+!s105 control_tp_sv_unit
+S1
+R0
+R5
+Z30 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv
+Z31 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv
+!i122 13
+L0 36 734
+R8
+31
+R9
+Z32 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv|
+Z33 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv|
+!i113 1
+R12
+R13
+R14
+Xcontrol_tp_sv_unit
+R1
+R29
+R3
+VL^eGRPCC9;TLWnS8naP_Q2
+r1
+!s85 0
+!i10b 1
+!s100 :ZDGEaWU>oT[<j5JN3QLW1
+IL^eGRPCC9;TLWnS8naP_Q2
+!i103 1
+S1
+R0
+R5
+R30
+R31
+!i122 13
+Z34 L0 34 0
+R8
+31
+R9
+R32
+R33
+!i113 1
+R12
+R13
+R14
+vCSA
+R1
+R2
+DXx4 work 11 CSA_sv_unit 0 22 G4_hh28B:Z2A^1?39a[RH1
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 HzZ0XYa1e4K1>JA=e64mh0
+IYkc3LN^SB=blLl`m[j8=N2
+!s105 CSA_sv_unit
+S1
+R0
+R5
+Z35 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/CSA.sv
+Z36 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/CSA.sv
+!i122 27
+L0 34 23
+R8
+31
+R9
+Z37 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/CSA.sv|
+Z38 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/CSA.sv|
+!i113 1
+R12
+R13
+R14
+n@c@s@a
+XCSA_sv_unit
+R1
+R2
+R3
+VG4_hh28B:Z2A^1?39a[RH1
+r1
+!s85 0
+!i10b 1
+!s100 dZMoEEaSHFdHi]62KcXoV3
+IG4_hh28B:Z2A^1?39a[RH1
+!i103 1
+S1
+R0
+R5
+R35
+R36
+!i122 27
+R24
+R8
+31
+R9
+R37
+R38
+!i113 1
+R12
+R13
+R14
+n@c@s@a_sv_unit
+vdiv_sqrt_top_tp
+R1
+R29
+DXx4 work 23 div_sqrt_top_tp_sv_unit 0 22 jAh8CeJ?dd:HmaFYPfj@K2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 8IERFMNUOM:7mi2SXR@Z_2
+IJ4E6E>HEYkzHnDi[o:Hi^3
+!s105 div_sqrt_top_tp_sv_unit
+S1
+R0
+R5
+Z39 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv
+Z40 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv
+!i122 19
+L0 34 126
+R8
+31
+R9
+Z41 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv|
+Z42 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv|
+!i113 1
+R12
+R13
+R14
+Xdiv_sqrt_top_tp_sv_unit
+R1
+R29
+R3
+VjAh8CeJ?dd:HmaFYPfj@K2
+r1
+!s85 0
+!i10b 1
+!s100 gKHmR=jcS^VgaGSGfeSDQ0
+IjAh8CeJ?dd:HmaFYPfj@K2
+!i103 1
+S1
+R0
+R5
+R39
+R40
+!i122 19
+R24
+R8
+31
+R9
+R41
+R42
+!i113 1
+R12
+R13
+R14
+vfmac
+R1
+R2
+DXx4 work 12 fmac_sv_unit 0 22 Kk[eD^PGT=hbJ5<a4d;;e3
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 >YcaSJ4:lHQF>H=4YE<K@3
+I<HYo2^AC3[]>`g59>bZaH0
+!s105 fmac_sv_unit
+S1
+R0
+R5
+Z43 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fmac.sv
+Z44 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fmac.sv
+!i122 31
+L0 35 188
+R8
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fmac.sv|
+Z45 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fmac.sv|
+!i113 1
+R12
+R13
+R14
+Xfmac_sv_unit
+R1
+R2
+R3
+VKk[eD^PGT=hbJ5<a4d;;e3
+r1
+!s85 0
+!i10b 1
+!s100 cVMBPbd]d@HgZAQWnES153
+IKk[eD^PGT=hbJ5<a4d;;e3
+!i103 1
+S1
+R0
+R5
+R43
+R44
+!i122 31
+Z46 L0 33 0
+R8
+31
+R9
+Z47 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fmac.sv|
+R45
+!i113 1
+R12
+R13
+R14
+vfp_fma_wrapper
+R1
+R3
+!i10b 1
+!s100 DET6JJidk7Z2K=n?dfaT91
+Z48 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IjKM>k[F2Ra7k<]9k7BlWU0
+R4
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv
+F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv
+!i122 11
+L0 42 152
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv|
+!i113 1
+R12
+R13
+R14
+vfpexc
+R1
+Z49 DXx4 work 8 fpu_defs 0 22 SXYQ@<aidNX`cZDjXoLd92
+DXx4 work 13 fpexc_sv_unit 0 22 3Rci@8Um4I^dfSH;5Vd7b0
+Z50 !s110 1683790792
+R4
+r1
+!s85 0
+!i10b 1
+!s100 TS0_24]70n[:EJdWY7hhZ2
+IPFz[SH@_bfFKWn^9m3K:X1
+!s105 fpexc_sv_unit
+S1
+R0
+R5
+Z51 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpexc.sv
+Z52 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpexc.sv
+!i122 2
+L0 37 116
+R8
+31
+Z53 !s108 1683790792.000000
+Z54 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpexc.sv|
+Z55 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpexc.sv|
+!i113 1
+R12
+R13
+R14
+Xfpexc_sv_unit
+R1
+R49
+R50
+V3Rci@8Um4I^dfSH;5Vd7b0
+r1
+!s85 0
+!i10b 1
+!s100 zZm`RYg>GE8h8A[8ceiKo1
+I3Rci@8Um4I^dfSH;5Vd7b0
+!i103 1
+S1
+R0
+R5
+R51
+R52
+!i122 2
+Z56 L0 35 0
+R8
+31
+R53
+R54
+R55
+!i113 1
+R12
+R13
+R14
+vfpu_add
+R1
+R49
+DXx4 work 15 fpu_add_sv_unit 0 22 SR?PQiKZQU5z_8UkPFDQl2
+R50
+R4
+r1
+!s85 0
+!i10b 1
+!s100 WNEO5<M7?VZJAI<CzS[g;1
+IGE`;`ne]DNKfaFeH]:j1U3
+!s105 fpu_add_sv_unit
+S1
+R0
+R5
+Z57 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_add.sv
+Z58 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_add.sv
+!i122 3
+L0 34 161
+R8
+31
+R53
+Z59 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_add.sv|
+Z60 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_add.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_add_sv_unit
+R1
+R49
+R50
+VSR?PQiKZQU5z_8UkPFDQl2
+r1
+!s85 0
+!i10b 1
+!s100 c;7o[200D0lNGz=Xcd0?52
+ISR?PQiKZQU5z_8UkPFDQl2
+!i103 1
+S1
+R0
+R5
+R57
+R58
+!i122 3
+R24
+R8
+31
+R53
+R59
+R60
+!i113 1
+R12
+R13
+R14
+vfpu_core
+R1
+R49
+DXx4 work 16 fpu_core_sv_unit 0 22 :BjY?Bn:LkOkoe^ej6R`=2
+R50
+R4
+r1
+!s85 0
+!i10b 1
+!s100 iX<FXW10naRkQTk17IeJH3
+I>SC9[N0Hl794KU2EN36;13
+!s105 fpu_core_sv_unit
+S1
+R0
+R5
+Z61 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_core.sv
+Z62 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_core.sv
+!i122 4
+L0 37 327
+R8
+31
+R53
+Z63 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_core.sv|
+Z64 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_core.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_core_sv_unit
+R1
+R49
+R50
+V:BjY?Bn:LkOkoe^ej6R`=2
+r1
+!s85 0
+!i10b 1
+!s100 BB9h8l1@U]gSnh?Z4IaQc3
+I:BjY?Bn:LkOkoe^ej6R`=2
+!i103 1
+S1
+R0
+R5
+R61
+R62
+!i122 4
+R56
+R8
+31
+R53
+R63
+R64
+!i113 1
+R12
+R13
+R14
+Xfpu_defs
+R1
+R50
+!i10b 1
+!s100 l0X0;VHFII;QSVOfEdMIz1
+R48
+ISXYQ@<aidNX`cZDjXoLd92
+VSXYQ@<aidNX`cZDjXoLd92
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_defs.sv
+F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_defs.sv
+!i122 1
+Z65 L0 20 0
+R8
+r1
+!s85 0
+31
+R53
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_defs.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_defs.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_defs_div_sqrt_tp
+R1
+R3
+!i10b 1
+!s100 bP;QgVofjTXcOe5`_<Rij0
+R48
+Ik5G?fOl9GRIjE:^E^g@lM2
+Vk5G?fOl9GRIjE:^E^g@lM2
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv
+F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv
+!i122 12
+L0 18 0
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_defs_fmac
+R1
+R3
+!i10b 1
+!s100 ]fOYT6ccPzXA6b;V@d<@C0
+R48
+IAYGaNJAlozFjaZ2VEclYz2
+VAYGaNJAlozFjaZ2VEclYz2
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv
+F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv
+!i122 20
+R65
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv|
+!i113 1
+R12
+R13
+R14
+vfpu_ff
+R1
+R50
+!i10b 1
+!s100 FeN0nhQBJnM]0^cC_@J6V1
+R48
+IfhD<4zO[KL>7Y:Zl4z?Xk1
+R4
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_utils/fpu_ff.sv
+F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_utils/fpu_ff.sv
+!i122 0
+L0 31 77
+R8
+r1
+!s85 0
+31
+R53
+!s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_utils/fpu_ff.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_utils/fpu_ff.sv|
+!i113 1
+R12
+R13
+R14
+vfpu_ftoi
+R1
+R49
+DXx4 work 16 fpu_ftoi_sv_unit 0 22 VWhLJH:JQLNK]Lifc[7S11
+R50
+R4
+r1
+!s85 0
+!i10b 1
+!s100 j2M]obbaXBG`zclh=X==:1
+I>cmFZ3FbeOY2AFAmS4moI2
+!s105 fpu_ftoi_sv_unit
+S1
+R0
+R5
+Z66 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv
+Z67 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv
+!i122 5
+L0 34 67
+R8
+31
+R53
+Z68 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv|
+Z69 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_ftoi_sv_unit
+R1
+R49
+R50
+VVWhLJH:JQLNK]Lifc[7S11
+r1
+!s85 0
+!i10b 1
+!s100 c6]Q4cTCTa2UUaEF8UzVO3
+IVWhLJH:JQLNK]Lifc[7S11
+!i103 1
+S1
+R0
+R5
+R66
+R67
+!i122 5
+R24
+R8
+31
+R53
+R68
+R69
+!i113 1
+R12
+R13
+R14
+vfpu_itof
+R1
+R49
+DXx4 work 16 fpu_itof_sv_unit 0 22 5N7SebJ5^c@Lmh=`>HW]10
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [=<3Jk;6TK@IVS^3GaG:Y3
+I8nT>2Ub^]AmLg_;okggal1
+!s105 fpu_itof_sv_unit
+S1
+R0
+R5
+Z70 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_itof.sv
+Z71 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_itof.sv
+!i122 6
+Z72 L0 34 55
+R8
+31
+R53
+Z73 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_itof.sv|
+Z74 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_itof.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_itof_sv_unit
+R1
+R49
+R3
+V5N7SebJ5^c@Lmh=`>HW]10
+r1
+!s85 0
+!i10b 1
+!s100 W8V=JgYFH]f?8^C3M`jRP3
+I5N7SebJ5^c@Lmh=`>HW]10
+!i103 1
+S1
+R0
+R5
+R70
+R71
+!i122 6
+R24
+R8
+31
+R53
+R73
+R74
+!i113 1
+R12
+R13
+R14
+vfpu_mult
+R1
+R49
+DXx4 work 16 fpu_mult_sv_unit 0 22 8@JQn[J>=ncigYYeX?Zn?1
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 8`Y_R`R8E4j2iVABhDY3f3
+IR:fnV:[ZkBJC[0LEgm3^C3
+!s105 fpu_mult_sv_unit
+S1
+R0
+R5
+Z75 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_mult.sv
+Z76 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_mult.sv
+!i122 7
+R72
+R8
+31
+R9
+Z77 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_mult.sv|
+Z78 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_mult.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_mult_sv_unit
+R1
+R49
+R3
+V8@JQn[J>=ncigYYeX?Zn?1
+r1
+!s85 0
+!i10b 1
+!s100 ;WI3FL58O8_aMEe7@K7661
+I8@JQn[J>=ncigYYeX?Zn?1
+!i103 1
+S1
+R0
+R5
+R75
+R76
+!i122 7
+R24
+R8
+31
+R9
+R77
+R78
+!i113 1
+R12
+R13
+R14
+vfpu_norm
+R1
+R49
+DXx4 work 16 fpu_norm_sv_unit 0 22 nT^30Xl<n?=[N^0BAkF`40
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 LWZbdlM[[zeg^EB=hH>h`2
+IO5f954zKdC2FhZ92gd1XV0
+!s105 fpu_norm_sv_unit
+S1
+R0
+R5
+Z79 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_norm.sv
+Z80 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_norm.sv
+!i122 8
+L0 35 150
+R8
+31
+R9
+Z81 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_norm.sv|
+Z82 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_norm.sv|
+!i113 1
+R12
+R13
+R14
+vfpu_norm_div_sqrt
+R1
+R29
+DXx4 work 25 fpu_norm_div_sqrt_sv_unit 0 22 PEi9WK>dI=2E69g@@E@GY3
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 o][YV8?NX34BgHVT_79Hm3
+IcRU6ONMCzfCZom@;1^GnO3
+!s105 fpu_norm_div_sqrt_sv_unit
+S1
+R0
+R5
+Z83 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv
+Z84 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv
+!i122 14
+L0 44 324
+R8
+31
+R9
+Z85 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv|
+Z86 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_norm_div_sqrt_sv_unit
+R1
+R29
+R3
+VPEi9WK>dI=2E69g@@E@GY3
+r1
+!s85 0
+!i10b 1
+!s100 UY`eaij0[=eg4gf^Vn]0h1
+IPEi9WK>dI=2E69g@@E@GY3
+!i103 1
+S1
+R0
+R5
+R83
+R84
+!i122 14
+L0 42 0
+R8
+31
+R9
+R85
+R86
+!i113 1
+R12
+R13
+R14
+vfpu_norm_fmac
+R1
+R2
+DXx4 work 21 fpu_norm_fmac_sv_unit 0 22 ?302QI<P8hm>oOlM:V]ei2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 315B4hEIcT:ao3;mckW?d1
+I?Nib;hOo0[z9NmAE:n@Ef3
+!s105 fpu_norm_fmac_sv_unit
+S1
+R0
+R5
+Z87 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv
+Z88 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv
+!i122 30
+L0 35 308
+R8
+31
+R9
+Z89 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv|
+Z90 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_norm_fmac_sv_unit
+R1
+R2
+R3
+V?302QI<P8hm>oOlM:V]ei2
+r1
+!s85 0
+!i10b 1
+!s100 68F0ago3SkenQzb=C5oYc2
+I?302QI<P8hm>oOlM:V]ei2
+!i103 1
+S1
+R0
+R5
+R87
+R88
+!i122 30
+R46
+R8
+31
+R9
+R89
+R90
+!i113 1
+R12
+R13
+R14
+Xfpu_norm_sv_unit
+R1
+R49
+R3
+VnT^30Xl<n?=[N^0BAkF`40
+r1
+!s85 0
+!i10b 1
+!s100 A@WUH<a60ff<1:c^LOTQ?3
+InT^30Xl<n?=[N^0BAkF`40
+!i103 1
+S1
+R0
+R5
+R79
+R80
+!i122 8
+R46
+R8
+31
+R9
+R81
+R82
+!i113 1
+R12
+R13
+R14
+vfpu_private
+R1
+R49
+DXx4 work 19 fpu_private_sv_unit 0 22 9RIQk?`SWl>LYobiaCEVo0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 D<[i[e9<3F:]JD:35AAY32
+IHXN3JV;k4DbkJbL6OmJA30
+!s105 fpu_private_sv_unit
+S1
+R0
+R5
+Z91 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_private.sv
+Z92 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_private.sv
+!i122 9
+L0 36 204
+R8
+31
+R9
+Z93 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_private.sv|
+Z94 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/fpu_private.sv|
+!i113 1
+R12
+R13
+R14
+Xfpu_private_sv_unit
+R1
+R49
+R3
+V9RIQk?`SWl>LYobiaCEVo0
+r1
+!s85 0
+!i10b 1
+!s100 bY^I;aljiHG03aV5L3fd@2
+I9RIQk?`SWl>LYobiaCEVo0
+!i103 1
+S1
+R0
+R5
+R91
+R92
+!i122 9
+R34
+R8
+31
+R9
+R93
+R94
+!i113 1
+R12
+R13
+R14
+viteration_div_sqrt
+R1
+R29
+DXx4 work 26 iteration_div_sqrt_sv_unit 0 22 [Y0R410Nfi@mCFI<P=dPm0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 F6m_j]WK0KYel7?A:IUfj3
+I_<2kUiD]DS2I@U[2d2S]R3
+!s105 iteration_div_sqrt_sv_unit
+S1
+R0
+R5
+Z95 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv
+Z96 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv
+!i122 16
+L0 32 25
+R8
+31
+R9
+Z97 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv|
+Z98 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv|
+!i113 1
+R12
+R13
+R14
+viteration_div_sqrt_first
+R1
+R29
+DXx4 work 32 iteration_div_sqrt_first_sv_unit 0 22 UV5B;GCY]f[XzLiFLPoo;3
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 gV>2SVVg7Ue7>_1@4k<W30
+IXaMFfDo<YTJZeD@aoOE7H2
+!s105 iteration_div_sqrt_first_sv_unit
+S1
+R0
+R5
+Z99 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv
+Z100 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv
+!i122 15
+L0 32 26
+R8
+31
+R9
+Z101 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv|
+Z102 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv|
+!i113 1
+R12
+R13
+R14
+Xiteration_div_sqrt_first_sv_unit
+R1
+R29
+R3
+VUV5B;GCY]f[XzLiFLPoo;3
+r1
+!s85 0
+!i10b 1
+!s100 nGm<hfPg4IoJdNoVHH@T90
+IUV5B;GCY]f[XzLiFLPoo;3
+!i103 1
+S1
+R0
+R5
+R99
+R100
+!i122 15
+R15
+R8
+31
+R9
+R101
+R102
+!i113 1
+R12
+R13
+R14
+Xiteration_div_sqrt_sv_unit
+R1
+R29
+R3
+V[Y0R410Nfi@mCFI<P=dPm0
+r1
+!s85 0
+!i10b 1
+!s100 OM6H4D=7ojRa@iJG3NN8X3
+I[Y0R410Nfi@mCFI<P=dPm0
+!i103 1
+S1
+R0
+R5
+R95
+R96
+!i122 16
+R15
+R8
+31
+R9
+R97
+R98
+!i113 1
+R12
+R13
+R14
+vLZA
+R1
+R2
+DXx4 work 11 LZA_sv_unit 0 22 BGjCRQc_D;;FLdkigSWZT0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 YSECFc]f3S84f^6^^cMLF0
+IERXOghCFSknOQofANHNoQ2
+!s105 LZA_sv_unit
+S1
+R0
+R5
+Z103 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/LZA.sv
+Z104 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/LZA.sv
+!i122 29
+L0 35 58
+R8
+31
+R9
+Z105 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/LZA.sv|
+Z106 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/LZA.sv|
+!i113 1
+R12
+R13
+R14
+n@l@z@a
+XLZA_sv_unit
+R1
+R2
+R3
+VBGjCRQc_D;;FLdkigSWZT0
+r1
+!s85 0
+!i10b 1
+!s100 51z]<a18zml;dl8H^7o@40
+IBGjCRQc_D;;FLdkigSWZT0
+!i103 1
+S1
+R0
+R5
+R103
+R104
+!i122 29
+R46
+R8
+31
+R9
+R105
+R106
+!i113 1
+R12
+R13
+R14
+n@l@z@a_sv_unit
+vnrbd_nrsc_tp
+R1
+R29
+DXx4 work 20 nrbd_nrsc_tp_sv_unit 0 22 ]]oOg^oKoNSff1CQPID1g2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 ;O6UQhCL=6oa4jjRoMUSb3
+Io1YVll][E7C2QJS15Z?aA2
+!s105 nrbd_nrsc_tp_sv_unit
+S1
+R0
+R5
+Z107 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv
+Z108 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv
+!i122 17
+L0 33 129
+R8
+31
+R9
+Z109 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv|
+Z110 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv|
+!i113 1
+R12
+R13
+R14
+Xnrbd_nrsc_tp_sv_unit
+R1
+R29
+R3
+V]]oOg^oKoNSff1CQPID1g2
+r1
+!s85 0
+!i10b 1
+!s100 E;F^L0UE^Y[:F51GAkRUC0
+I]]oOg^oKoNSff1CQPID1g2
+!i103 1
+S1
+R0
+R5
+R107
+R108
+!i122 17
+R15
+R8
+31
+R9
+R109
+R110
+!i113 1
+R12
+R13
+R14
+vpp_generation
+R1
+R2
+DXx4 work 21 pp_generation_sv_unit 0 22 >=dBTcbC>V3mnDbi?<mC42
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [i>4V62Xge3`gPfjkJ<W80
+IMjMXG781NA`?C4Gzn1mDe2
+!s105 pp_generation_sv_unit
+S1
+R0
+R5
+Z111 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/pp_generation.sv
+Z112 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/pp_generation.sv
+!i122 24
+L0 34 66
+R8
+31
+R9
+Z113 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/pp_generation.sv|
+Z114 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/pp_generation.sv|
+!i113 1
+R12
+R13
+R14
+Xpp_generation_sv_unit
+R1
+R2
+R3
+V>=dBTcbC>V3mnDbi?<mC42
+r1
+!s85 0
+!i10b 1
+!s100 ^[?WRlTd2Sj^d<SlD1zBM2
+I>=dBTcbC>V3mnDbi?<mC42
+!i103 1
+S1
+R0
+R5
+R111
+R112
+!i122 24
+R24
+R8
+31
+R9
+R113
+R114
+!i113 1
+R12
+R13
+R14
+vpreprocess
+R1
+R29
+DXx4 work 18 preprocess_sv_unit 0 22 @K3iITTVU5lX<k@4WzhN^0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cS[1@K3iL3FSSGH4?_22H3
+I@2N8DMf[[3<MN^DCX@NB03
+!s105 preprocess_sv_unit
+S1
+R0
+R5
+Z115 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv
+Z116 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv
+!i122 18
+L0 34 280
+R8
+31
+R9
+Z117 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv|
+Z118 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv|
+!i113 1
+R12
+R13
+R14
+vpreprocess_fmac
+R1
+R2
+DXx4 work 23 preprocess_fmac_sv_unit 0 22 6Vjf?bf_>5<jTnV[5K9IC2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 ;NC6M1X_N>JLOZb5lJ7K`0
+IXYYXFi]_1HUKTMLe9jRK12
+!s105 preprocess_fmac_sv_unit
+S1
+R0
+R5
+Z119 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv
+Z120 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv
+!i122 21
+L0 35 88
+R8
+31
+R9
+Z121 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv|
+Z122 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv|
+!i113 1
+R12
+R13
+R14
+Xpreprocess_fmac_sv_unit
+R1
+R2
+R3
+V6Vjf?bf_>5<jTnV[5K9IC2
+r1
+!s85 0
+!i10b 1
+!s100 XIZ?[8TK7NRjYc9<bidZ;1
+I6Vjf?bf_>5<jTnV[5K9IC2
+!i103 1
+S1
+R0
+R5
+R119
+R120
+!i122 21
+R46
+R8
+31
+R9
+R121
+R122
+!i113 1
+R12
+R13
+R14
+Xpreprocess_sv_unit
+R1
+R29
+R3
+V@K3iITTVU5lX<k@4WzhN^0
+r1
+!s85 0
+!i10b 1
+!s100 SJ5adJ2eC:AoPgX^0hg<`2
+I@K3iITTVU5lX<k@4WzhN^0
+!i103 1
+S1
+R0
+R5
+R115
+R116
+!i122 18
+R24
+R8
+31
+R9
+R117
+R118
+!i113 1
+R12
+R13
+R14
+vriscv_fpu
+R1
+R49
+DXx4 work 17 riscv_fpu_sv_unit 0 22 RblIZ[dXOlYeB6iiRQ=E91
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [8Z?2:>=6zF9TQT42nC_02
+IQf57h@GYUGa:O>^7IUSmT3
+!s105 riscv_fpu_sv_unit
+S1
+R0
+R5
+Z123 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv
+Z124 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv
+!i122 10
+L0 35 98
+R8
+31
+R9
+Z125 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv|
+Z126 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv|
+!i113 1
+R12
+R13
+R14
+Xriscv_fpu_sv_unit
+R1
+R49
+R3
+VRblIZ[dXOlYeB6iiRQ=E91
+r1
+!s85 0
+!i10b 1
+!s100 9m;0cV_9bbc5zj=BzBG1U3
+IRblIZ[dXOlYeB6iiRQ=E91
+!i103 1
+S1
+R0
+R5
+R123
+R124
+!i122 10
+R46
+R8
+31
+R9
+R125
+R126
+!i113 1
+R12
+R13
+R14
+vwallace
+R1
+R2
+DXx4 work 15 wallace_sv_unit 0 22 _ajfjIP6aMe<kVS^PJH9Z2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 n?Peb80jTeNdg@]oS>`>H1
+II06DM_h92=CWAKnMi6H?W3
+!s105 wallace_sv_unit
+S1
+R0
+R5
+Z127 8/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/wallace.sv
+Z128 F/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/wallace.sv
+!i122 25
+L0 34 43
+R8
+31
+R9
+Z129 !s107 /home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/wallace.sv|
+Z130 !s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/fpu_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/fpu/.|/home/ahmed98/pulpino/vsim/..//ips/fpu/hdl/fpu_fmac/wallace.sv|
+!i113 1
+R12
+R13
+R14
+Xwallace_sv_unit
+R1
+R2
+R3
+V_ajfjIP6aMe<kVS^PJH9Z2
+r1
+!s85 0
+!i10b 1
+!s100 =^jhKc@QmD6bBez6]G3z_1
+I_ajfjIP6aMe<kVS^PJH9Z2
+!i103 1
+S1
+R0
+R5
+R127
+R128
+!i122 25
+R24
+R8
+31
+R9
+R129
+R130
+!i113 1
+R12
+R13
+R14

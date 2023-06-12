@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmed98/pulpino/vsim
+vapb_timer
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683790794
+!i10b 1
+!s100 bBC?baQeTF_V@K3Z8[]B93
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[E5VU7VbAQC9;DnVGgz1B3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1677614595
+8/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/apb_timer.sv
+F/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/apb_timer.sv
+!i122 0
+L0 13 75
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1683790794.000000
+!s107 /home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/apb_timer.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/apb_timer_lib|/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/apb_timer.sv|
+!i113 1
+Z8 o-suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/apb_timer_lib
+Z9 tCvgOpt 0
+vtimer
+R1
+R2
+!i10b 1
+!s100 ?l]NFiVhfkRIZiCn2?:6z2
+R3
+Im@MV2miYCDlAHd0AI[3kc2
+R4
+S1
+R0
+R5
+8/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/timer.sv
+F/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/timer.sv
+!i122 1
+L0 21 126
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/timer.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/apb_timer_lib|/home/ahmed98/pulpino/vsim/..//ips/apb/apb_timer/timer.sv|
+!i113 1
+R8
+R9

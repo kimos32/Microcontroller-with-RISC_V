@@ -1,0 +1,760 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmed98/pulpino/vsim
+YAPB_BUS
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1683790799
+!i10b 1
+!s100 GMAk>;9a8ZgZhzglcWFC80
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I10zaHY8dcBGZn@n]5kOYD2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1683735814
+8/home/ahmed98/pulpino/vsim/..//rtl/includes/apb_bus.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/includes/apb_bus.sv
+!i122 19
+L0 77 0
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1683790799.000000
+Z7 !s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/apb_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/periph_bus_wrap.sv|
+Z8 !s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/periph_bus_wrap.sv|
+!i113 1
+Z9 o-quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib
+Z10 !s92 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib +incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes +define+RISCV
+Z11 tCvgOpt 0
+n@a@p@b_@b@u@s
+vaxi2apb_wrap
+R1
+R2
+!i10b 1
+!s100 n[?lfii7a6R0<RG[fjZQW3
+R3
+IW:5V4cWHLg7XgJ0Z1iLd]1
+R4
+S1
+R0
+Z12 w1677614242
+8/home/ahmed98/pulpino/vsim/..//rtl/axi2apb_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/axi2apb_wrap.sv
+!i122 20
+L0 13 183
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/axi2apb_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/axi2apb_wrap.sv|
+!i113 1
+R9
+R10
+R11
+YAXI_BUS
+R1
+R2
+!i10b 1
+!s100 1G?nG>iTkndL@92bJ=LT?2
+R3
+IUjXOkeX_]X;:6a`<l;VTz3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv
+!i122 25
+L0 23 0
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/core2axi_wrap.sv|
+Z13 !s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/core2axi_wrap.sv|
+!i113 1
+R9
+R10
+R11
+n@a@x@i_@b@u@s
+vaxi_mem_if_SP_wrap
+R1
+R2
+!i10b 1
+!s100 5J^<`IlIHhjgcYz:ZTFT`3
+R3
+IHOPFzG`kZ>Jc@zK89n4^o3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/axi_mem_if_SP_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/axi_mem_if_SP_wrap.sv
+!i122 22
+L0 13 102
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/axi_mem_if_SP_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/axi_mem_if_SP_wrap.sv|
+!i113 1
+R9
+R10
+R11
+naxi_mem_if_@s@p_wrap
+vaxi_node_intf_wrap
+R1
+R2
+!i10b 1
+!s100 joOPg:=i5Fd`BPFnnB_Xc3
+R3
+IdoD1l5FN`8MEbZf1<Jm1;1
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/axi_node_intf_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/axi_node_intf_wrap.sv
+!i122 16
+L0 14 378
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/axi_node_intf_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/axi_node_intf_wrap.sv|
+!i113 1
+R9
+R10
+R11
+vaxi_slice_wrap
+R1
+R2
+!i10b 1
+!s100 gG[FEj^T:NaeEoM@i2Zcl0
+R3
+I^I0i^>zV6dB@6@f:>dL_01
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/axi_slice_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/axi_slice_wrap.sv
+!i122 24
+L0 12 186
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/axi_slice_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/axi_slice_wrap.sv|
+!i113 1
+R9
+R10
+R11
+vaxi_spi_slave_wrap
+R1
+R2
+!i10b 1
+!s100 b<kBN@LU<AdLo3:4<gMNR0
+R3
+I^AiK7LzV`VWU_N7bCli>Z0
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/axi_spi_slave_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/axi_spi_slave_wrap.sv
+!i122 21
+L0 12 104
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/axi_spi_slave_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/axi_spi_slave_wrap.sv|
+!i113 1
+R9
+R10
+R11
+vboot_code
+R1
+R2
+!i10b 1
+!s100 1WhFI2Ij>U;DOIFkTSdFj2
+R3
+I;n4Oh8UH[oV?e3`@1iaDI1
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/boot_code.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/boot_code.sv
+!i122 12
+L0 11 574
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/boot_code.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/boot_code.sv|
+!i113 1
+R9
+R10
+R11
+vboot_rom_wrap
+R1
+R2
+!i10b 1
+!s100 GS39WM>2Ti93Ok_9PUR=00
+R3
+IzMQ9zh]7PZW>mg6f1T4[R1
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/boot_rom_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/boot_rom_wrap.sv
+!i122 11
+L0 14 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/boot_rom_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/boot_rom_wrap.sv|
+!i113 1
+R9
+R10
+R11
+vclk_rst_gen
+R1
+R2
+!i10b 1
+!s100 ilGVcdfQ:@LCAR3fGS;JJ0
+R3
+I]<4I>h8<kn2:nhE656Jd]2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/clk_rst_gen.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/clk_rst_gen.sv
+!i122 23
+L0 12 90
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/clk_rst_gen.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/clk_rst_gen.sv|
+!i113 1
+R9
+R10
+R11
+vcluster_clock_gating
+R1
+Z14 !s110 1683790798
+!i10b 1
+!s100 E`B^REjLB39J40e_IljdA3
+R3
+IkbR:AVbS?3Da87^g`A_0]3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_gating.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_gating.sv
+!i122 0
+Z15 L0 11 24
+R5
+r1
+!s85 0
+31
+Z16 !s108 1683790798.000000
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_gating.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_gating.sv|
+!i113 1
+R9
+R11
+vcluster_clock_inverter
+R1
+R14
+!i10b 1
+!s100 V<d3ic;KW_PZnaeQnT?iF0
+R3
+IWcjo_gS<oV4>PDll0jbeX0
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_inverter.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_inverter.sv
+!i122 2
+Z17 L0 11 9
+R5
+r1
+!s85 0
+31
+R16
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_inverter.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_inverter.sv|
+!i113 1
+R9
+R11
+vcluster_clock_mux2
+R1
+R14
+!i10b 1
+!s100 L`jbz;HDBMU1CMK8z3Zc83
+R3
+IAVAje@5g]I2f:zZMC8oZP2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_mux2.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_mux2.sv
+!i122 3
+Z18 L0 11 17
+R5
+r1
+!s85 0
+31
+R16
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_mux2.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/cluster_clock_mux2.sv|
+!i113 1
+R9
+R11
+vcore2axi_wrap
+R1
+R2
+!i10b 1
+!s100 bATYYVfKgzbTiXFe9]:TV0
+R3
+I]5C;WOB@YnU9FfBogbShO2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/core2axi_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/core2axi_wrap.sv
+!i122 25
+L0 14 102
+R5
+r1
+!s85 0
+31
+R6
+Z19 !s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/core2axi_wrap.sv|
+R13
+!i113 1
+R9
+R10
+R11
+vcore_region
+R1
+R2
+!i10b 1
+!s100 g=aJX_MeD9WJcCTc9P:6Y2
+R3
+I8>;ZN1CnidP0jWW;8;>`>2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/core_region.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/core_region.sv
+!i122 9
+L0 15 709
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/core_region.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/core_region.sv|
+!i113 1
+R9
+R10
+R11
+YDEBUG_BUS
+R1
+R2
+!i10b 1
+!s100 G35<k1eA8C5DVBMNlGKAV3
+R3
+I`=9nbJgY^XBH8J1ETTdJ50
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/includes/debug_bus.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/includes/debug_bus.sv
+!i122 18
+L0 16 0
+R5
+r1
+!s85 0
+31
+R6
+Z20 !s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/debug_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/apb_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/peripherals.sv|
+Z21 !s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/peripherals.sv|
+!i113 1
+R9
+R10
+R11
+n@d@e@b@u@g_@b@u@s
+vgeneric_fifo
+R1
+R2
+!i10b 1
+!s100 mY=TCM>7Ezbh[j42AACfL3
+R3
+ILMWAcW:NTzggbOF9Hjc<c0
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/generic_fifo.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/generic_fifo.sv
+!i122 6
+L0 11 242
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/generic_fifo.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/generic_fifo.sv|
+!i113 1
+R9
+R11
+vinstr_ram_wrap
+R1
+R2
+!i10b 1
+!s100 lLiacShL^?JP5BLOFN@gL0
+R3
+I[Ihm;ZlC=laj`<lOTX^Lk3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/instr_ram_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/instr_ram_wrap.sv
+!i122 13
+L0 14 74
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/instr_ram_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/instr_ram_wrap.sv|
+!i113 1
+R9
+R10
+R11
+vperiph_bus_wrap
+R1
+R2
+!i10b 1
+!s100 W19NSS>jM1fgPO9c[@WTm2
+R3
+IPbJ9RU0^hmH:?T]?3T9Nf1
+R4
+S1
+R0
+w1683677073
+8/home/ahmed98/pulpino/vsim/..//rtl/periph_bus_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/periph_bus_wrap.sv
+!i122 19
+L0 13 109
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vperipherals
+R1
+R2
+!i10b 1
+!s100 [L`Z;8MTGo8=;3o4YOP]z2
+R3
+Ila>aQH[4B[TRzn^4TWBX90
+R4
+S1
+R0
+w1683731396
+8/home/ahmed98/pulpino/vsim/..//rtl/peripherals.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/peripherals.sv
+!i122 18
+L0 16 567
+R5
+r1
+!s85 0
+31
+R6
+R20
+R21
+!i113 1
+R9
+R10
+R11
+vpulp_clock_gating
+R1
+R14
+!i10b 1
+!s100 lIVN?cTz?DC=FeTcU19zK2
+R3
+IZoUnYP;V]B;HDZ15`o3o`2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_gating.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_gating.sv
+!i122 1
+R15
+R5
+r1
+!s85 0
+31
+R16
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_gating.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_gating.sv|
+!i113 1
+R9
+R11
+vpulp_clock_inverter
+R1
+R14
+!i10b 1
+!s100 4;2azRiClKg0724cVi2za2
+R3
+I53eTIFSG0@hgRzbP:K2Zo3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_inverter.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_inverter.sv
+!i122 4
+R17
+R5
+r1
+!s85 0
+31
+R16
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_inverter.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_inverter.sv|
+!i113 1
+R9
+R11
+vpulp_clock_mux2
+R1
+R2
+!i10b 1
+!s100 =hiU[7jE<Rhm;1:iHVlE^3
+R3
+IB_RdW^DFLm@C2oMh^XNC?1
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_mux2.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_mux2.sv
+!i122 5
+R18
+R5
+r1
+!s85 0
+31
+R16
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_mux2.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/pulp_clock_mux2.sv|
+!i113 1
+R9
+R11
+vpulpino_top
+R1
+R2
+!i10b 1
+!s100 HN0KZmQM3j;?jOo0k0M>82
+R3
+IHF84c_2ECPT81iGO[`Yg=3
+R4
+S1
+R0
+w1683676601
+8/home/ahmed98/pulpino/vsim/..//rtl/pulpino_top.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/pulpino_top.sv
+!i122 17
+L0 20 299
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/debug_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/includes/axi_bus.sv|/home/ahmed98/pulpino/vsim/..//rtl/pulpino_top.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/pulpino_top.sv|
+!i113 1
+R9
+R10
+R11
+vram_mux
+R1
+R2
+!i10b 1
+!s100 EVB_YIAAIZAHlMh9`ZVge0
+R3
+IXgIPN^dzM<AFOCm?Ni66c2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/ram_mux.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/ram_mux.sv
+!i122 15
+L0 11 155
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/ram_mux.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/ram_mux.sv|
+!i113 1
+R9
+R10
+R11
+vrandom_stalls
+R1
+R2
+!i10b 1
+!s100 N;e>W_9ICTG4fR;TkU4H02
+R3
+IleAANoGZKQmJhfW5>AC2J2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/random_stalls.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/random_stalls.sv
+!i122 10
+L0 11 173
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/random_stalls.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/random_stalls.sv|
+!i113 1
+R9
+R10
+R11
+vrstgen
+R1
+R2
+!i10b 1
+!s100 oA0NccEhiOI`IJgC2>d4S3
+R3
+I:DHRW>kckREl?Dehc8J1^3
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/rstgen.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/rstgen.sv
+!i122 7
+L0 11 57
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/rstgen.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/rstgen.sv|
+!i113 1
+R9
+R11
+vsp_ram
+R1
+R2
+!i10b 1
+!s100 _R26eiQ8:S5FQ=E5lbgb<3
+R3
+IIjaDK6d=d`cGOE:QD4Gkm2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/components/sp_ram.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/components/sp_ram.sv
+!i122 8
+L0 11 50
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/components/sp_ram.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|/home/ahmed98/pulpino/vsim/..//rtl/components/sp_ram.sv|
+!i113 1
+R9
+R11
+vsp_ram_wrap
+R1
+R2
+!i10b 1
+!s100 UGQQ2iG9aFT<HhX0>hhWR0
+R3
+IjCDoPT<ZhN>T8_ANeDgmE2
+R4
+S1
+R0
+R12
+8/home/ahmed98/pulpino/vsim/..//rtl/sp_ram_wrap.sv
+F/home/ahmed98/pulpino/vsim/..//rtl/sp_ram_wrap.sv
+!i122 14
+L0 13 79
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/ahmed98/pulpino/vsim/..//rtl/includes/config.sv|/home/ahmed98/pulpino/vsim/..//rtl/sp_ram_wrap.sv|
+!s90 -quiet|-sv|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/pulpino_lib|+incdir+/home/ahmed98/pulpino/vsim/..//rtl/includes|+define+RISCV|/home/ahmed98/pulpino/vsim/..//rtl/sp_ram_wrap.sv|
+!i113 1
+R9
+R10
+R11
