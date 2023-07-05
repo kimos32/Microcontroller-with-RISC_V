@@ -1,0 +1,891 @@
+module AXI_interconnect #(parameter ADDR_width = 'd32 , DATA_width = 'd32 , sID_width  = 'd6, 
+                                    mID_width  = 'd2  , seq_width  = 'd4  , user_width = 'd1 )(
+
+/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////Global Signals///////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+	input clk, 
+	input reset_n,
+
+////////////////////////////////////////////////////////////////////////
+//////////////////////Write Response Channel///////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+    //Master Signals Definition
+    output [mID_width-1:0]     m_BID   ,
+    output [1:0]               m_BRESP ,
+    output                     m_BVALID,
+    output [user_width-1:0]    m_BUSER ,
+    input                      m_BREADY,
+
+    //Slave0 Signals Definition
+    input [sID_width-1:0]      s0_BID   ,
+    input [1:0]                s0_BRESP ,
+    input                      s0_BVALID,
+    input [user_width-1:0]     s0_BUSER ,
+    output                     s0_BREADY, 
+
+    //Slave1 Signals Definition
+    input [sID_width-1:0]      s1_BID   ,
+    input [1:0]                s1_BRESP ,
+    input                      s1_BVALID,
+    input [user_width-1:0]     s1_BUSER ,
+    output                     s1_BREADY,
+
+    //Slave2 Signals Definition
+    input [sID_width-1:0]      s2_BID   ,
+    input [1:0]                s2_BRESP ,
+    input                      s2_BVALID,
+    input [user_width-1:0]     s2_BUSER ,
+    output                     s2_BREADY,
+                               
+    //Slave3 Signals Definition
+    input [sID_width-1:0]      s3_BID   ,
+    input [1:0]                s3_BRESP ,
+    input                      s3_BVALID,
+    input [user_width-1:0]     s3_BUSER ,
+    output                     s3_BREADY,
+
+    //Slave4 Signals Definition
+    input [sID_width-1:0]      s4_BID   ,
+    input [1:0]                s4_BRESP ,
+    input                      s4_BVALID,
+    input [user_width-1:0]     s4_BUSER ,
+    output                     s4_BREADY,
+	
+////////////////////////////////////////////////////////////////////////
+////////////////////////////Read Channel///////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+    //Master Signals Definition
+    output [mID_width-1:0]   m_RID   ,
+    output [DATA_width-1:0]  m_RDATA ,
+    output [1:0]             m_RRESP ,
+    output                   m_RLAST ,
+    output [user_width-1:0]  m_RUSER ,
+    output                   m_RVALID,
+    input                    m_RREADY,
+                             
+    //Slave0 Signals Definition
+    input [sID_width-1:0]    s0_RID   ,
+    input [DATA_width-1:0]   s0_RDATA ,
+    input [1:0]              s0_RRESP ,
+    input                    s0_RLAST ,
+    input [user_width-1:0]   s0_RUSER ,
+    input                    s0_RVALID,
+    output                   s0_RREADY,
+                             
+    //Slave1 Signals Definition
+    input [sID_width-1:0]    s1_RID   ,
+    input [DATA_width-1:0]   s1_RDATA ,
+    input [1:0]              s1_RRESP ,
+    input                    s1_RLAST ,
+    input [user_width-1:0]   s1_RUSER ,
+    input                    s1_RVALID,
+    output                   s1_RREADY,
+
+    //Slave2 Signals Definition
+    input [sID_width-1:0]    s2_RID   ,
+    input [DATA_width-1:0]   s2_RDATA ,
+    input [1:0]              s2_RRESP ,
+    input                    s2_RLAST ,
+    input [user_width-1:0]   s2_RUSER ,
+    input                    s2_RVALID,
+    output                   s2_RREADY,
+
+    //Slave3 Signals Definition
+    input [sID_width-1:0]    s3_RID   ,
+    input [DATA_width-1:0]   s3_RDATA ,
+    input [1:0]              s3_RRESP ,
+    input                    s3_RLAST ,
+    input [user_width-1:0]   s3_RUSER ,
+    input                    s3_RVALID,
+    output                   s3_RREADY,
+
+    //Slave4 Signals Definition
+    input [sID_width-1:0]    s4_RID   ,
+    input [DATA_width-1:0]   s4_RDATA ,
+    input [1:0]              s4_RRESP ,
+    input                    s4_RLAST ,
+    input [user_width-1:0]   s4_RUSER ,
+    input                    s4_RVALID,
+    output                   s4_RREADY,
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////Read Address Channel///////////////////////////
+//////////////////////////////////////////////////////////////////////
+	
+    //Master Signals Definition
+	input [mID_width-1:0]      m_ARID    ,
+    input [ADDR_width-1:0]     m_ARADDR  ,
+    input [7:0]                m_ARLEN   ,
+    input [2:0]                m_ARSIZE  ,
+    input [1:0]                m_ARBURST ,
+    input [3:0]                m_ARCACHE ,
+    input [1:0]                m_ARLOCK  ,
+    input [2:0]                m_ARPROT  ,
+    input [3:0]                m_ARQOS   ,
+    input [3:0]                m_ARREGION,
+    input                      m_ARUSER  ,
+    input                      m_ARVALID ,
+    output  wire               m_ARREADY ,
+
+    //Salve0 Signals
+    output wire [sID_width-1:0]        s0_ARID    ,
+    output wire [ADDR_width-1:0]       s0_ARADDR  ,
+    output wire [7:0]                  s0_ARLEN   ,
+    output wire [2:0]                  s0_ARSIZE  ,
+    output wire [1:0]                  s0_ARBURST ,
+    output wire [3:0]                  s0_ARCACHE ,
+    output wire [1:0]                  s0_ARLOCK  ,
+    output wire [2:0]                  s0_ARPROT  ,
+    output wire [3:0]                  s0_ARQOS   ,
+    output wire [3:0]                  s0_ARREGION,
+    output wire                        s0_ARUSER  ,
+    output wire                        s0_ARVALID ,
+    input                              s0_ARREADY ,
+                                       
+    //Salve1 Signals                   
+    output wire [sID_width-1:0]        s1_ARID    ,
+    output wire [ADDR_width-1:0]       s1_ARADDR  ,
+    output wire [7:0]                  s1_ARLEN   ,
+    output wire [2:0]                  s1_ARSIZE  ,
+    output wire [1:0]                  s1_ARBURST ,
+    output wire [3:0]                  s1_ARCACHE ,
+    output wire [1:0]                  s1_ARLOCK  ,
+    output wire [2:0]                  s1_ARPROT  ,
+    output wire [3:0]                  s1_ARQOS   ,
+    output wire [3:0]                  s1_ARREGION,
+    output wire                        s1_ARUSER  ,
+    output wire                        s1_ARVALID ,
+    input                              s1_ARREADY ,
+
+    //Salve2 Signals
+    output wire [sID_width-1:0]        s2_ARID    ,
+    output wire [ADDR_width-1:0]       s2_ARADDR  ,
+    output wire [7:0]                  s2_ARLEN   ,
+    output wire [2:0]                  s2_ARSIZE  ,
+    output wire [1:0]                  s2_ARBURST ,
+    output wire [3:0]                  s2_ARCACHE ,
+    output wire [1:0]                  s2_ARLOCK  ,
+    output wire [2:0]                  s2_ARPROT  ,
+    output wire [3:0]                  s2_ARQOS   ,
+    output wire [3:0]                  s2_ARREGION,
+    output wire                        s2_ARUSER  ,
+    output wire                        s2_ARVALID ,
+    input                              s2_ARREADY ,
+
+    //Salve3 Signals
+    output wire [sID_width-1:0]        s3_ARID    ,
+    output wire [ADDR_width-1:0]       s3_ARADDR  ,
+    output wire [7:0]                  s3_ARLEN   ,
+    output wire [2:0]                  s3_ARSIZE  ,
+    output wire [1:0]                  s3_ARBURST ,
+    output wire [3:0]                  s3_ARCACHE ,
+    output wire [1:0]                  s3_ARLOCK  ,
+    output wire [2:0]                  s3_ARPROT  ,
+    output wire [3:0]                  s3_ARQOS   ,
+    output wire [3:0]                  s3_ARREGION,
+    output wire                        s3_ARUSER  ,
+    output wire                        s3_ARVALID ,
+    input                              s3_ARREADY ,
+
+    //Salve4 Signlas
+    output wire [sID_width-1:0]        s4_ARID    ,
+    output wire [ADDR_width-1:0]       s4_ARADDR  ,
+    output wire [7:0]                  s4_ARLEN   ,
+    output wire [2:0]                  s4_ARSIZE  ,
+    output wire [1:0]                  s4_ARBURST ,
+    output wire [3:0]                  s4_ARCACHE ,
+    output wire [1:0]                  s4_ARLOCK  ,
+    output wire [2:0]                  s4_ARPROT  ,
+    output wire [3:0]                  s4_ARQOS   ,
+    output wire [3:0]                  s4_ARREGION,
+    output wire                        s4_ARUSER  ,
+    output wire                        s4_ARVALID ,
+    input                              s4_ARREADY ,
+
+    //Salve5 Signals -Default slave to generate decode error
+    output wire [sID_width-1:0]        s5_ARID    ,
+    output wire [ADDR_width-1:0]       s5_ARADDR  ,
+    output wire [7:0]                  s5_ARLEN   ,
+    output wire [2:0]                  s5_ARSIZE  ,
+    output wire [1:0]                  s5_ARBURST ,
+    output wire [3:0]                  s5_ARCACHE ,
+    output wire [1:0]                  s5_ARLOCK  ,
+    output wire [2:0]                  s5_ARPROT  ,
+    output wire [3:0]                  s5_ARQOS   ,
+    output wire [3:0]                  s5_ARREGION,
+    output wire                        s5_ARUSER  ,
+    output wire                        s5_ARVALID ,
+    input                              s5_ARREADY ,
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////Write Address Channel//////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+    //Master Signals
+	output wire              m_AWREADY ,
+	input                    m_AWVALID ,
+	input [mID_width-1:0]    m_AWID    ,
+    input [ADDR_width-1:0]   m_AWADDR  ,
+    input [7:0]              m_AWLEN   ,
+    input [2:0]              m_AWSIZE  ,
+    input [1:0]              m_AWBURST ,
+    input [3:0]              m_AWCACHE ,
+    input [1:0]              m_AWLOCK  ,
+    input [2:0]              m_AWPROT  ,
+    input [3:0]              m_AWQOS   ,
+    input [3:0]              m_AWREGION,
+    input                    m_AWUSER  ,
+
+    //Salve0 Signals
+    input                             s0_AWREADY,
+	output wire                       s0_AWVALID,
+	output wire [sID_width-1:0]       s0_AWID,
+    output wire [ADDR_width-1:0]      s0_AWADDR,
+    output wire [7:0]                 s0_AWLEN,
+    output wire [2:0]                 s0_AWSIZE,
+    output wire [1:0]                 s0_AWBURST,
+    output wire [3:0]                 s0_AWCACHE,
+    output wire [1:0]                 s0_AWLOCK,
+    output wire [2:0]                 s0_AWPROT,
+    output wire [3:0]                 s0_AWQOS,
+    output wire [3:0]                 s0_AWREGION,
+    output wire                       s0_AWUSER,
+    
+    //Salve1 Signals
+    input                          s1_AWREADY ,
+	output wire                    s1_AWVALID ,
+	output wire [sID_width-1:0]    s1_AWID    ,
+    output wire [ADDR_width-1:0]   s1_AWADDR  ,
+    output wire [7:0]              s1_AWLEN   ,
+    output wire [2:0]              s1_AWSIZE  ,
+    output wire [1:0]              s1_AWBURST ,
+    output wire [3:0]              s1_AWCACHE ,
+    output wire [1:0]              s1_AWLOCK  ,
+    output wire [2:0]              s1_AWPROT  ,
+    output wire [3:0]              s1_AWQOS   ,
+    output wire [3:0]              s1_AWREGION,
+    output wire                    s1_AWUSER  ,
+
+    //Salve2 Signals
+    input                          s2_AWREADY ,
+	output wire                    s2_AWVALID ,
+	output wire [sID_width-1:0]    s2_AWID    ,
+    output wire [ADDR_width-1:0]   s2_AWADDR  ,
+    output wire [7:0]              s2_AWLEN   ,
+    output wire [2:0]              s2_AWSIZE  ,
+    output wire [1:0]              s2_AWBURST ,
+    output wire [3:0]              s2_AWCACHE ,
+    output wire [1:0]              s2_AWLOCK  ,
+    output wire [2:0]              s2_AWPROT  ,
+    output wire [3:0]              s2_AWQOS   ,
+    output wire [3:0]              s2_AWREGION,
+    output wire                    s2_AWUSER  ,
+    
+    //Slave3 Signals
+    input                          s3_AWREADY ,
+	output wire                    s3_AWVALID ,
+	output wire [sID_width-1:0]    s3_AWID    ,
+    output wire [ADDR_width-1:0]   s3_AWADDR  ,
+    output wire [7:0]              s3_AWLEN   ,
+    output wire [2:0]              s3_AWSIZE  ,
+    output wire [1:0]              s3_AWBURST ,
+    output wire [3:0]              s3_AWCACHE ,
+    output wire [1:0]              s3_AWLOCK  ,
+    output wire [2:0]              s3_AWPROT  ,
+    output wire [3:0]              s3_AWQOS   ,
+    output wire [3:0]              s3_AWREGION,
+    output wire                    s3_AWUSER  ,
+    
+    //Slave4 Signals
+    input                          s4_AWREADY ,
+	output wire                    s4_AWVALID ,
+	output wire [sID_width-1:0]    s4_AWID    ,
+    output wire [ADDR_width-1:0]   s4_AWADDR  ,
+    output wire [7:0]              s4_AWLEN   ,
+    output wire [2:0]              s4_AWSIZE  ,
+    output wire [1:0]              s4_AWBURST ,
+    output wire [3:0]              s4_AWCACHE ,
+    output wire [1:0]              s4_AWLOCK  ,
+    output wire [2:0]              s4_AWPROT  ,
+    output wire [3:0]              s4_AWQOS   ,
+    output wire [3:0]              s4_AWREGION,
+    output wire                    s4_AWUSER  ,
+    
+    //Slave5 Signals -Default slave to generate decode error
+    input                          s5_AWREADY ,
+	output wire                    s5_AWVALID ,
+	output wire [sID_width-1:0]    s5_AWID    ,
+    output wire [ADDR_width-1:0]   s5_AWADDR  ,
+    output wire [7:0]              s5_AWLEN   ,
+    output wire [2:0]              s5_AWSIZE  ,
+    output wire [1:0]              s5_AWBURST ,
+    output wire [3:0]              s5_AWCACHE ,
+    output wire [1:0]              s5_AWLOCK  ,
+    output wire [2:0]              s5_AWPROT  ,
+    output wire [3:0]              s5_AWQOS   ,
+    output wire [3:0]              s5_AWREGION,
+    output wire                    s5_AWUSER  ,
+    
+////////////////////////////////////////////////////////////////////////
+//////////////////////////Write Data Channel///////////////////////////
+//////////////////////////////////////////////////////////////////////
+    
+    //Master Signals
+	input [DATA_width-1:0]     m_WDATA ,
+    input [(DATA_width/8)-1:0] m_WSTRB ,
+    input                      m_WLAST ,
+    input                      m_WUSER ,
+    input                      m_WVALID,
+    output wire                m_WREADY,
+    
+    //Slave0 Signals
+    output wire [DATA_width-1:0]     s0_WDATA ,
+    output wire [(DATA_width/8)-1:0] s0_WSTRB ,
+    output wire                      s0_WLAST ,
+    output wire                      s0_WUSER ,
+    output wire                      s0_WVALID,
+    input                            s0_WREADY,
+
+    //Slave1 Signals
+    output wire [DATA_width-1:0]     s1_WDATA ,
+    output wire [(DATA_width/8)-1:0] s1_WSTRB ,
+    output wire                      s1_WLAST ,
+    output wire                      s1_WUSER ,
+    output wire                      s1_WVALID,
+    input                            s1_WREADY,
+
+    //Slave2 Signals
+    output wire [DATA_width-1:0]     s2_WDATA ,
+    output wire [(DATA_width/8)-1:0] s2_WSTRB ,
+    output wire                      s2_WLAST ,
+    output wire                      s2_WUSER ,
+    output wire                      s2_WVALID,
+    input                            s2_WREADY,
+    
+    //Slave3 Signals
+    output wire [DATA_width-1:0]     s3_WDATA ,
+    output wire [(DATA_width/8)-1:0] s3_WSTRB ,
+    output wire                      s3_WLAST ,
+    output wire                      s3_WUSER ,
+    output wire                      s3_WVALID,
+    input                            s3_WREADY,
+    
+    //Slave4 Signals
+    output wire [DATA_width-1:0]     s4_WDATA ,
+    output wire [(DATA_width/8)-1:0] s4_WSTRB ,
+    output wire                      s4_WLAST ,
+    output wire                      s4_WUSER ,
+    output wire                      s4_WVALID,
+    input                            s4_WREADY,
+    
+    //Slave5 Signals
+    output wire [DATA_width-1:0]     s5_WDATA ,
+    output wire [(DATA_width/8)-1:0] s5_WSTRB ,
+    output wire                      s5_WLAST , 
+    output wire                      s5_WUSER ,
+    output wire                      s5_WVALID,
+    input                            s5_WREADY 
+
+    );
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Internal Signals///////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+wire                    AW_ready        ;
+wire                    AR_ready        ;
+wire                    W_ready         ;
+
+wire [sID_width-1:0]    AW_ID_FINAL     ;
+wire [ADDR_width-1:0]   address_dec     ;
+wire [sID_width-1:0]    AR_ID_FINAL     ;
+
+wire aw_valid_out, 
+     aw_ready_out;
+
+wire w_valid_out, 
+     w_ready_out;
+
+wire m_WVALID_out_top ;
+wire m_WREADY_out_top ;
+
+wire wr_enable_top, 
+     r_enable_top , 
+     empty_top    , 
+     full_top     ;
+
+assign m_ARREADY = AR_ready;   
+assign m_WREADY  = m_WREADY_out_top; 
+assign m_AWREADY = aw_ready_out;
+
+
+/*  
+wire                    read_enable_out ;
+wire                    write_enable_out;
+*/
+/*
+//wire [DATA_width-1:0]  m_WDATA_out ; 
+//wire [(DATA_width/8)-1:0] m_WSTRB_out ;
+//wire m_WLAST_out ;
+//wire m_WUSER_out ;
+//wire m_WVALID_out ;
+//wire m_WREADY_out ;
+*/
+/*
+address_controller FIFO_CONT(     
+.AW_valid(m_AWVALID),
+.AW_ready(AW_ready),
+.w_last(m_WLAST),
+.w_ready(W_ready),
+.read_enable(read_enable_out),  
+.write_enable(write_enable_out));
+*/
+
+
+/////////////////////////////////////////////////////////////////////////////////
+////////////////////////Write Address Channel Interconnect//////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+//Write Channel Sequence Generator
+ W_id_generator  #(.id_pad(seq_width), .id_width(mID_width)) write_ID (
+.AW_ID(m_AWID),
+.AW_Ready(aw_ready_out), 
+.AW_valid(aw_valid_out),
+.Aclk(clk),
+.ARESETnRst(reset_n),
+.AWID(AW_ID_FINAL));
+
+//Address FIFO to hold addresses
+synnch_fifo synch_fifo(
+.wr_enable(wr_enable_top),
+.r_enable(r_enable_top) , 
+.AW_address(m_AWADDR) ,
+.clk(clk),
+.rst(reset_n) , 
+.out_data(address_dec) , 
+.empty(empty_top),
+.full( full_top));
+
+//Address FIFO Controller to control writing and reading from FIFO
+address_controller fifo_cont(
+.AW_valid(m_AWVALID) ,
+.AW_ready(AW_ready) ,
+.w_last( m_WLAST)  ,
+.w_ready(W_ready) ,
+.w_valid(m_WVALID),
+.read_enable(r_enable_top) ,
+.write_enable(wr_enable_top));
+
+//Block to prevent master from sending more addresses when FIFO is full
+full_fifo_solver  mux(
+.ready( AW_ready ) ,
+.full(full_top) , 
+.valid(m_AWVALID) ,
+.valid_out(aw_valid_out) , 
+.ready_out(aw_ready_out)); 
+
+//Write Address Channel Crossbar
+AW_crossbar #(.ID_width(sID_width), .ADDR_width(ADDR_width)) AW_Channel (
+.m_AWID(AW_ID_FINAL),
+.m_AWADDR(m_AWADDR),
+.m_AWLEN(m_AWLEN),
+.m_AWSIZE( m_AWSIZE),
+.m_AWBURST(m_AWBURST),
+.m_AWCACHE(m_AWCACHE),
+.m_AWLOCK(m_AWLOCK),
+.m_AWPROT(m_AWPROT),
+.m_AWQOS(m_AWQOS),
+.m_AWREGION(m_AWREGION),
+.m_AWUSER(m_AWUSER),
+.m_AWVALID(aw_valid_out),
+.m_AWREADY(AW_ready) ,
+
+.s0_AWREADY(s0_AWREADY),
+.s0_AWID(s0_AWID),
+.s0_AWADDR(s0_AWADDR),
+.s0_AWLEN(s0_AWLEN),
+.s0_AWSIZE(s0_AWSIZE),
+.s0_AWBURST(s0_AWBURST),
+.s0_AWCACHE(s0_AWCACHE),
+.s0_AWLOCK(s0_AWLOCK),
+.s0_AWPROT(s0_AWPROT),
+.s0_AWQOS(s0_AWQOS),
+.s0_AWREGION(s0_AWREGION),
+.s0_AWUSER(s0_AWUSER),
+.s0_AWVALID(s0_AWVALID),
+
+.s1_AWREADY(s1_AWREADY),
+.s1_AWID(s1_AWID),
+.s1_AWADDR(s1_AWADDR),
+.s1_AWLEN(s1_AWLEN),
+.s1_AWSIZE(s1_AWSIZE),
+.s1_AWBURST(s1_AWBURST),
+.s1_AWCACHE(s1_AWCACHE),
+.s1_AWLOCK(s1_AWLOCK),
+.s1_AWPROT(s1_AWPROT),
+.s1_AWQOS(s1_AWQOS),
+.s1_AWREGION(s1_AWREGION),
+.s1_AWUSER(s1_AWUSER),
+.s1_AWVALID(s1_AWVALID),
+
+.s2_AWREADY(s2_AWREADY),
+.s2_AWID(s2_AWID),
+.s2_AWADDR(s2_AWADDR),
+.s2_AWLEN(s2_AWLEN),
+.s2_AWSIZE(s2_AWSIZE),
+.s2_AWBURST(s2_AWBURST),
+.s2_AWCACHE(s2_AWCACHE),
+.s2_AWLOCK(s2_AWLOCK),
+.s2_AWPROT(s2_AWPROT),
+.s2_AWQOS(s2_AWQOS),
+.s2_AWREGION(s2_AWREGION),
+.s2_AWUSER(s2_AWUSER),
+.s2_AWVALID(s2_AWVALID),
+
+.s3_AWREADY(s3_AWREADY),
+.s3_AWID(s3_AWID),
+.s3_AWADDR(s3_AWADDR),
+.s3_AWLEN(s3_AWLEN),
+.s3_AWSIZE(s3_AWSIZE),
+.s3_AWBURST(s3_AWBURST),
+.s3_AWCACHE(s3_AWCACHE),
+.s3_AWLOCK(s3_AWLOCK),
+.s3_AWPROT(s3_AWPROT),
+.s3_AWQOS(s3_AWQOS),
+.s3_AWREGION(s3_AWREGION),
+.s3_AWUSER(s3_AWUSER),
+.s3_AWVALID(s3_AWVALID) ,
+
+.s4_AWREADY(s4_AWREADY),
+.s4_AWID(s4_AWID),
+.s4_AWADDR(s4_AWADDR),
+.s4_AWLEN(s4_AWLEN),
+.s4_AWSIZE(s4_AWSIZE),
+.s4_AWBURST(s4_AWBURST),
+.s4_AWCACHE(s4_AWCACHE),
+.s4_AWLOCK(s4_AWLOCK),
+.s4_AWPROT(s4_AWPROT),
+.s4_AWQOS(s4_AWQOS),
+.s4_AWREGION(s4_AWREGION),
+.s4_AWUSER(s4_AWUSER),
+.s4_AWVALID(s4_AWVALID) ,
+
+.s5_AWREADY(s5_AWREADY),
+.s5_AWID(s5_AWID),
+.s5_AWADDR(s5_AWADDR),
+.s5_AWLEN(s5_AWLEN),
+.s5_AWSIZE(s5_AWSIZE),
+.s5_AWBURST(s5_AWBURST),
+.s5_AWCACHE(s5_AWCACHE),
+.s5_AWLOCK(s5_AWLOCK),
+.s5_AWPROT(s5_AWPROT),
+.s5_AWQOS(s5_AWQOS),
+.s5_AWREGION(s5_AWREGION),
+.s5_AWUSER(s5_AWUSER),
+.s5_AWVALID(s5_AWVALID));
+
+/////////////////////////////////////////////////////////////////////////////////
+////////////////////////Read Address Channel Interconnect///////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+//Read Channel Sequence Generator
+read_id_generator #(.id_pad(seq_width), .id_width(mID_width)) read_ID (
+.AR_ID(m_ARID),
+.AR_Ready(AR_ready), 
+.AR_valid(m_ARVALID),
+.Aclk(clk),
+.ARESETnRst(reset_n),
+.ARID(AR_ID_FINAL));
+
+//Read Address Channel Crossbar
+AR_crossbar #(.ID_width(sID_width) , .ADDR_width(ADDR_width)) AR_ch (
+.m_ARID(AR_ID_FINAL),
+.m_ARADDR(m_ARADDR),
+.m_ARLEN(m_ARLEN),
+.m_ARSIZE( m_ARSIZE),
+.m_ARBURST(m_ARBURST),
+.m_ARCACHE(m_ARCACHE),
+.m_ARLOCK(m_ARLOCK),
+.m_ARPROT(m_ARPROT),
+.m_ARQOS(m_ARQOS),
+.m_ARREGION(m_ARREGION),
+.m_ARUSER(m_ARUSER),
+.m_ARVALID(m_ARVALID),
+.m_ARREADY(AR_ready) ,
+
+.s0_ARREADY(s0_ARREADY),
+.s0_ARID(s0_ARID),
+.s0_ARADDR(s0_ARADDR),
+.s0_ARLEN(s0_ARLEN),
+.s0_ARSIZE(s0_ARSIZE),
+.s0_ARBURST(s0_ARBURST),
+.s0_ARCACHE(s0_ARCACHE),
+.s0_ARLOCK(s0_ARLOCK),
+.s0_ARPROT(s0_ARPROT),
+.s0_ARQOS(s0_ARQOS),
+.s0_ARREGION(s0_ARREGION),
+.s0_ARUSER(s0_ARUSER),
+.s0_ARVALID(s0_ARVALID),
+   
+.s1_ARREADY(s1_ARREADY),
+.s1_ARID(s1_ARID),
+.s1_ARADDR(s1_ARADDR),
+.s1_ARLEN(s1_ARLEN),
+.s1_ARSIZE(s1_ARSIZE),
+.s1_ARBURST(s1_ARBURST),
+.s1_ARCACHE(s1_ARCACHE),
+.s1_ARLOCK(s1_ARLOCK),
+.s1_ARPROT(s1_ARPROT),
+.s1_ARQOS(s1_ARQOS),
+.s1_ARREGION(s1_ARREGION),
+.s1_ARUSER(s1_ARUSER),
+.s1_ARVALID(s1_ARVALID),
+  
+.s2_ARREADY(s2_ARREADY),
+.s2_ARID(s2_ARID),
+.s2_ARADDR(s2_ARADDR),
+.s2_ARLEN(s2_ARLEN),
+.s2_ARSIZE(s2_ARSIZE),
+.s2_ARBURST(s2_ARBURST),
+.s2_ARCACHE(s2_ARCACHE),
+.s2_ARLOCK(s2_ARLOCK),
+.s2_ARPROT(s2_ARPROT),
+.s2_ARQOS(s2_ARQOS),
+.s2_ARREGION(s2_ARREGION),
+.s2_ARUSER(s2_ARUSER),
+.s2_ARVALID(s2_ARVALID),         
+
+
+.s3_ARREADY(s3_ARREADY),
+.s3_ARID(s3_ARID),
+.s3_ARADDR(s3_ARADDR),
+.s3_ARLEN(s3_ARLEN),
+.s3_ARSIZE(s3_ARSIZE),
+.s3_ARBURST(s3_ARBURST),
+.s3_ARCACHE(s3_ARCACHE),
+.s3_ARLOCK(s3_ARLOCK),
+.s3_ARPROT(s3_ARPROT),
+.s3_ARQOS(s3_ARQOS),
+.s3_ARREGION(s3_ARREGION),
+.s3_ARUSER(s3_ARUSER),
+.s3_ARVALID(s3_ARVALID),  
+
+
+.s4_ARREADY(s4_ARREADY),
+.s4_ARID(s4_ARID),
+.s4_ARADDR(s4_ARADDR),
+.s4_ARLEN(s4_ARLEN),
+.s4_ARSIZE(s4_ARSIZE),
+.s4_ARBURST(s4_ARBURST),
+.s4_ARCACHE(s4_ARCACHE),
+.s4_ARLOCK(s4_ARLOCK),
+.s4_ARPROT(s4_ARPROT),
+.s4_ARQOS(s4_ARQOS),
+.s4_ARREGION(s4_ARREGION),
+.s4_ARUSER(s4_ARUSER),
+.s4_ARVALID(s4_ARVALID),  
+
+.s5_ARREADY(s5_ARREADY),
+.s5_ARID(s5_ARID),
+.s5_ARADDR(s5_ARADDR),
+.s5_ARLEN(s5_ARLEN),
+.s5_ARSIZE(s5_ARSIZE),
+.s5_ARBURST(s5_ARBURST),
+.s5_ARCACHE(s5_ARCACHE),
+.s5_ARLOCK(s5_ARLOCK),
+.s5_ARPROT(s5_ARPROT),
+.s5_ARQOS(s5_ARQOS),
+.s5_ARREGION(s5_ARREGION),
+.s5_ARUSER(s5_ARUSER),
+.s5_ARVALID(s5_ARVALID));
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////Write Channel Interconnect/////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+//Write Data Channel Crossbar
+W_crossbar  #(.DATA_width(DATA_width), .Address_decode_width(ADDR_width)) w_channel (
+.Address_decode(address_dec) ,
+.m_WDATA(m_WDATA),
+.m_WSTRB(m_WSTRB),
+.m_WLAST(m_WLAST),
+.m_WUSER(m_WUSER),
+.m_WVALID( m_WVALID_out_top),
+.m_WREADY(W_ready), 
+
+.s0_WDATA(s0_WDATA),
+.s0_WSTRB(s0_WSTRB),
+.s0_WLAST(s0_WLAST),
+.s0_WUSER(s0_WUSER),
+.s0_WVALID(s0_WVALID),
+.s0_WREADY(s0_WREADY),
+
+.s1_WDATA(s1_WDATA),
+.s1_WSTRB(s1_WSTRB),
+.s1_WLAST(s1_WLAST),
+.s1_WUSER(s1_WUSER),
+.s1_WVALID(s1_WVALID),
+.s1_WREADY(s1_WREADY),
+
+.s2_WDATA(s2_WDATA),
+.s2_WSTRB(s2_WSTRB),
+.s2_WLAST(s2_WLAST),
+.s2_WUSER(s2_WUSER),
+.s2_WVALID(s2_WVALID),
+.s2_WREADY(s2_WREADY), 
+
+.s3_WDATA(s3_WDATA),
+.s3_WSTRB(s3_WSTRB),
+.s3_WLAST(s3_WLAST),
+.s3_WUSER(s3_WUSER),
+.s3_WVALID(s3_WVALID),
+.s3_WREADY(s3_WREADY),
+
+.s4_WDATA(s4_WDATA),
+.s4_WSTRB(s4_WSTRB),
+.s4_WLAST(s4_WLAST),
+.s4_WUSER(s4_WUSER),
+.s4_WVALID(s4_WVALID),
+.s4_WREADY(s4_WREADY),
+
+.s5_WDATA(s5_WDATA),
+.s5_WSTRB(s5_WSTRB),
+.s5_WLAST(s5_WLAST),
+.s5_WUSER(s5_WUSER),
+.s5_WVALID(s5_WVALID),
+.s5_WREADY(s5_WREADY));
+
+//Delayes Data by 2 clocks until the Address is ready from Address FIFO
+write_channel_delayer mux_1 (
+.empty(empty_top) , 
+.r_enable(r_enable_top) , 
+.clk(clk) , 
+.rst(reset_n) ,
+.m_WVALID(m_WVALID) ,
+.m_WREADY(W_ready) ,
+.m_WVALID_out(m_WVALID_out_top) ,
+.m_WREADY_out(m_WREADY_out_top));
+
+/////////////////////////////////////////////////////////////////////////////////
+////////////////////////Write Response Channel Interconnect/////////////////////
+///////////////////////////////////////////////////////////////////////////////
+Bchannel_interconnect #(.sID_width(sID_width), .mID_width(mID_width), .seq_width(seq_width), .user_width(user_width))
+                      BU0(.clk(clk)        ,
+                          .reset_n(reset_n),
+    
+                          .m_BID(m_BID)      ,
+                          .m_BRESP(m_BRESP)  ,
+                          .m_BVALID(m_BVALID),
+                          .m_BUSER(m_BUSER)  ,
+                          .m_BREADY(m_BREADY),
+
+                          .s0_BID(s0_BID)      ,
+                          .s0_BRESP(s0_BRESP)  ,
+                          .s0_BVALID(s0_BVALID),
+                          .s0_BUSER(s0_BUSER)  ,
+                          .s0_BREADY(s0_BREADY), 
+
+                          .s1_BID(s1_BID)      ,
+                          .s1_BRESP(s1_BRESP)  ,
+                          .s1_BVALID(s1_BVALID),
+                          .s1_BUSER(s1_BUSER)  ,
+                          .s1_BREADY(s1_BREADY),
+
+                          .s2_BID(s2_BID)      ,
+                          .s2_BRESP(s2_BRESP)  ,
+                          .s2_BVALID(s2_BVALID),
+                          .s2_BUSER(s2_BUSER)  ,
+                          .s2_BREADY(s2_BREADY),
+
+                          .s3_BID(s3_BID)      ,
+                          .s3_BRESP(s3_BRESP)  ,
+                          .s3_BVALID(s3_BVALID),
+                          .s3_BUSER(s3_BUSER)  ,
+                          .s3_BREADY(s3_BREADY),
+
+                          .s4_BID(s4_BID)      ,
+                          .s4_BRESP(s4_BRESP)  ,
+                          .s4_BVALID(s4_BVALID),
+                          .s4_BUSER(s4_BUSER)  ,
+                          .s4_BREADY(s4_BREADY)
+                           );
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////Read Channel Interconnect//////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+Rchannel_interconnect #(.sID_width(sID_width)  , .mID_width(mID_width), .seq_width(seq_width),
+                        .DATA_width(DATA_width), .user_width(user_width))
+             RU0(.clk(clk)         ,
+              .reset_n(reset_n)    ,
+              .m_RID(m_RID)        ,
+              .m_RDATA(m_RDATA)    ,
+              .m_RRESP(m_RRESP)    ,
+              .m_RLAST(m_RLAST)    ,
+              .m_RUSER(m_RUSER)    ,
+              .m_RVALID(m_RVALID)  ,
+              .m_RREADY(m_RREADY)  ,
+
+              .s0_RID(s0_RID)      ,
+              .s0_RDATA(s0_RDATA)  ,
+              .s0_RRESP(s0_RRESP)  ,
+              .s0_RLAST(s0_RLAST)  ,
+              .s0_RUSER(s0_RUSER)  ,
+              .s0_RVALID(s0_RVALID),
+              .s0_RREADY(s0_RREADY),
+
+              .s1_RID(s1_RID)      ,
+              .s1_RDATA(s1_RDATA)  ,
+              .s1_RRESP(s1_RRESP)  ,
+              .s1_RLAST(s1_RLAST)  ,
+              .s1_RUSER(s1_RUSER)  ,
+              .s1_RVALID(s1_RVALID),
+              .s1_RREADY(s1_RREADY),
+
+              .s2_RID(s2_RID)      ,
+              .s2_RDATA(s2_RDATA)  ,
+              .s2_RRESP(s2_RRESP)  ,
+              .s2_RLAST(s2_RLAST)  ,
+              .s2_RUSER(s2_RUSER)  ,
+              .s2_RVALID(s2_RVALID),
+              .s2_RREADY(s2_RREADY),
+
+              .s3_RID(s3_RID)      ,
+              .s3_RDATA(s3_RDATA)  ,
+              .s3_RRESP(s3_RRESP)  ,
+              .s3_RLAST(s3_RLAST)  ,
+              .s3_RUSER(s3_RUSER)  ,
+              .s3_RVALID(s3_RVALID),
+              .s3_RREADY(s3_RREADY),
+
+              .s4_RID(s4_RID)      ,
+              .s4_RDATA(s4_RDATA)  ,
+              .s4_RRESP(s4_RRESP)  ,
+              .s4_RLAST(s4_RLAST)  ,
+              .s4_RUSER(s4_RUSER)  ,
+              .s4_RVALID(s4_RVALID),
+              .s4_RREADY(s4_RREADY)
+             );
+
+
+/*
+//reg_write  slicing(
+//m_WREADY(W_ready),
+//m_WDATA(m_WDATA),
+//m_WSTRB(m_WSTRB),
+//m_WLAST(m_WLAST),
+//m_WUSER(m_WUSER),
+//.clk(clk), 
+//.m_WVALID(m_WVALID),
+//.rst(rst),
+//.m_WDATA_out(m_WDATA_out) ,
+//.m_WSTRB_out(m_WSTRB_out),
+//.m_WLAST_out(m_WLAST_out),
+//.m_WUSER_out(m_WUSER_out),
+//.m_WREADY_out(m_WREADY_out),
+//.m_WVALID_out(m_WVALID_out) ) ;
+*/
+
+
+endmodule 
