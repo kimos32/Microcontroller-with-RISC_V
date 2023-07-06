@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.keccak.elf.dir/keccak.c.o"
-  "CMakeFiles/perfbench.keccak.elf.dir/keccak.c.o.d"
   "CMakeFiles/perfbench.keccak.elf.dir/keccak_test.c.o"
-  "CMakeFiles/perfbench.keccak.elf.dir/keccak_test.c.o.d"
   "perfbench.keccak.elf"
   "perfbench.keccak.elf.pdb"
 )

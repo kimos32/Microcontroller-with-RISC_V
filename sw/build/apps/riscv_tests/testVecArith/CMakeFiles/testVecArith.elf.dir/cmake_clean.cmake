@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testVecArith.elf.dir/testVecArith.c.o"
-  "CMakeFiles/testVecArith.elf.dir/testVecArith.c.o.d"
   "testVecArith.elf"
   "testVecArith.elf.pdb"
 )

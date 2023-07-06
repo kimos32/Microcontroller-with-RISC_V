@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.core.dir/main.c.o"
-  "CMakeFiles/perfbench.core.dir/main.c.o.d"
   "libperfbench.core.a"
   "libperfbench.core.pdb"
 )

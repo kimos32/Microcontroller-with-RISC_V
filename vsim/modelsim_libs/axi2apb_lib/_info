@@ -8,106 +8,615 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/ahmed98/pulpino/vsim
-vaxi2apb
+Z0 d/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim
+vAPB_master
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683790794
+Z2 !s110 1688597034
 !i10b 1
-!s100 SlOii>PgnJ`cYZ1E3GK8^2
+!s100 Ah2K6ge7]6c`SeBZiT7zA1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I7`5oYOVd76b6?W]Ha<i]O3
+In7;38PSQSSo:LZV?T_>5Z2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1677614599
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb.sv
-!i122 2
-L0 31 863
+Z5 w1686750096
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/APB_master.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/APB_master.sv
+!i122 10
+L0 1 341
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1683790794.000000
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi2apb_lib|/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb.sv|
+Z7 !s108 1688597034.000000
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/APB_master.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/APB_master.sv|
 !i113 1
-Z8 o-suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/axi2apb_lib
+Z8 o-suppress 2583 -quiet -sv -work /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib
 Z9 tCvgOpt 0
-vaxi2apb32
+n@a@p@b_master
+vaxi2apb
 R1
-R2
+Z10 !s110 1688597033
 !i10b 1
-!s100 daa6an48IY>3n1>bdze@20
+!s100 SlOii>PgnJ`cYZ1E3GK8^2
 R3
-Igz2V@36;78FhR:>VgM6OO3
+IDQn>zWK8eSe`4bCSTI[o13
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb32.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb32.sv
+Z11 w1677614599
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb.sv
+!i122 2
+L0 31 863
+R6
+r1
+!s85 0
+31
+Z12 !s108 1688597033.000000
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb.sv|
+!i113 1
+R8
+R9
+vaxi2apb32
+R1
+R10
+!i10b 1
+!s100 daa6an48IY>3n1>bdze@20
+R3
+IFQI=9Z?9QBUhQez]^RJ8A3
+R4
+S1
+R0
+R11
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb32.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb32.sv
 !i122 3
 L0 30 517
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb32.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi2apb_lib|/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/axi2apb32.sv|
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb32.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/axi2apb32.sv|
 !i113 1
 R8
 R9
 vAXI_2_APB
 R1
-R2
+R10
 !i10b 1
 !s100 U8Ji1>ZW]9Xm6CVfFZ0Bo3
 R3
-If0G1hIg=Dga3GM8hDUa9i1
+I84GGzkUQ`nlBcnjDV19^70
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv
+R11
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv
 !i122 0
 L0 32 819
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi2apb_lib|/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv|
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB.sv|
 !i113 1
 R8
 R9
 n@a@x@i_2_@a@p@b
 vAXI_2_APB_32
 R1
-R2
+R10
 !i10b 1
 !s100 lGdF>IWR^VGi;3dM[E@UT0
 R3
-IGS>kANY:i=P]n]acdW;Sf0
+IALJ[A^BhBh[fEC47lELkS1
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv
+R11
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv
 !i122 1
 L0 29 538
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi2apb_lib|/home/ahmed98/pulpino/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv|
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/AXI_2_APB_32.sv|
 !i113 1
 R8
 R9
 n@a@x@i_2_@a@p@b_32
+vAXI_AG_READ
+R1
+R2
+!i10b 1
+!s100 PS4:0=Q7oP]e>WD>MoKgU0
+R3
+IE3X601@XiBSS;k2b5Z`Cn0
+R4
+S1
+R0
+Z13 w1687646899
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_READ.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_READ.sv
+!i122 19
+L0 14 395
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_READ.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_READ.sv|
+!i113 1
+R8
+R9
+n@a@x@i_@a@g_@r@e@a@d
+vAXI_AG_WRITE
+R1
+Z14 !s110 1688597035
+!i10b 1
+!s100 O2A[9E:64:OHd`N40AMPL3
+R3
+Ih4YQ`Q63<Z5z;PZgi0cM@1
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_WRITE.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_WRITE.sv
+!i122 20
+L0 14 941
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_WRITE.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_WRITE.sv|
+!i113 1
+R8
+R9
+n@a@x@i_@a@g_@w@r@i@t@e
+vAXI_RG_READ
+R1
+R2
+!i10b 1
+!s100 PFD@LU4;JaUohd5Rznl162
+R3
+IiEL@GH_BzQ>]TSi`4Ngd92
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_READ.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_READ.sv
+!i122 17
+L0 12 280
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_READ.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_READ.sv|
+!i113 1
+R8
+R9
+n@a@x@i_@r@g_@r@e@a@d
+vAXI_RG_WRITE
+R1
+R2
+!i10b 1
+!s100 V6I=LCGmAKaM[=LSIe2;b2
+R3
+IlY`TY2;FUF=W4;hZhN]l10
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_WRITE.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_WRITE.sv
+!i122 18
+L0 12 57
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_WRITE.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_WRITE.sv|
+!i113 1
+R8
+R9
+n@a@x@i_@r@g_@w@r@i@t@e
+vAXI_to_APB_bridge
+R1
+R10
+!i10b 1
+!s100 Xja3Xek1Hc4zMd:f5Nmbc3
+R3
+Iazl91<BkS56D:W6^niIFE0
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/AXI_to_APB_bridge.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/AXI_to_APB_bridge.sv
+!i122 5
+L0 2 136
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/AXI_to_APB_bridge.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/AXI_to_APB_bridge.sv|
+!i113 1
+R8
+R9
+n@a@x@i_to_@a@p@b_bridge
+vbridge
+R1
+R10
+!i10b 1
+!s100 hKQoGac>KS4UaA=zSzFbH3
+R3
+IQ3N6<`4IHmnPkIJ;U<l^C0
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/bridge.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/bridge.sv
+!i122 4
+L0 1 182
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/bridge.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/bridge.sv|
+!i113 1
+R8
+R9
+vconcatenator
+R1
+R10
+!i10b 1
+!s100 Wk_CHIh[X`Ok[gm^VC7We3
+R3
+I21HgB6_zeMV^JZ000Wo`L1
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/concatenator.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/concatenator.sv
+!i122 6
+L0 1 63
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/concatenator.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/concatenator.sv|
+!i113 1
+R8
+R9
+vdeconcatenator
+R1
+R2
+!i10b 1
+!s100 6B95YTjfcF:4cGP0;m?^20
+R3
+I]chglG:NBaU[iJKl^P>UE3
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/deconcatenator.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/deconcatenator.sv
+!i122 7
+Z15 L0 1 23
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/deconcatenator.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/deconcatenator.sv|
+!i113 1
+R8
+R9
+vfifo_top
+R1
+R2
+!i10b 1
+!s100 1O6zYfW[k5;d2QgTdJYaK2
+R3
+I;QNz9Qo7;F2c=[YaVSNei2
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifo_top.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifo_top.sv
+!i122 8
+L0 3 38
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifo_top.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifo_top.sv|
+!i113 1
+R8
+R9
+vfifomem
+R1
+R2
+!i10b 1
+!s100 52oBH4I7SJajDomRB9?_Q2
+R3
+IIFfL^Ek>T^h1LKXiZAL0W3
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifomem.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifomem.sv
+!i122 12
+L0 1 17
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifomem.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/fifomem.sv|
+!i113 1
+R8
+R9
+vMUXs
+R1
+R2
+!i10b 1
+!s100 I68?8cj=aPTzWC0]bdz1T3
+R3
+IS:[j<34zefC;^GdZI5KFo1
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/MUXs.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/MUXs.sv
+!i122 9
+L0 1 121
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/MUXs.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/MUXs.sv|
+!i113 1
+R8
+R9
+n@m@u@xs
+vRead_FIFO
+R1
+R14
+!i10b 1
+!s100 W`RU^O[2V71NSP>SAd@zX0
+R3
+I@IEY_gbYAUW>OMXZEaK]^2
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Read_FIFO.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Read_FIFO.sv
+!i122 21
+L0 11 311
+R6
+r1
+!s85 0
+31
+Z16 !s108 1688597035.000000
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Read_FIFO.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Read_FIFO.sv|
+!i113 1
+R8
+R9
+n@read_@f@i@f@o
+vrinc_bottom_generator
+R1
+R2
+!i10b 1
+!s100 B_h_L:=oSjIe45=kR2JZ71
+R3
+ILj1198ZZ4K61F4cf]`hWK1
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rinc_bottom_generator.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rinc_bottom_generator.sv
+!i122 11
+R15
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rinc_bottom_generator.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rinc_bottom_generator.sv|
+!i113 1
+R8
+R9
+vrptr_empty
+R1
+R2
+!i10b 1
+!s100 ZU^=5MbB5Wf;WL0JNJl4k2
+R3
+I9VHSYmCP7QjJmzB;QD5dX2
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rptr_empty.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rptr_empty.sv
+!i122 13
+L0 5 45
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rptr_empty.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/rptr_empty.sv|
+!i113 1
+R8
+R9
+vsync_r2w
+R1
+R2
+!i10b 1
+!s100 R4DmnM4h9TS<YMd9e^4;E3
+R3
+IY;ZodbnVP=^7z2FQ_NIdn2
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_r2w.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_r2w.sv
+!i122 14
+Z17 L0 3 13
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_r2w.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_r2w.sv|
+!i113 1
+R8
+R9
+vsync_w2r
+R1
+R2
+!i10b 1
+!s100 V`Nz^^L2G21JdFHOG?@F71
+R3
+I`6@I<KMHPbV68Q[I<U<::1
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_w2r.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_w2r.sv
+!i122 15
+R17
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_w2r.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/sync_w2r.sv|
+!i113 1
+R8
+R9
+vtop_module
+R1
+R14
+!i10b 1
+!s100 cZ3IYQ5OfXhi<]4U5]i141
+R3
+IkzZi[=ozTJSU=dfe[ZNBi2
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/top_module.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/top_module.sv
+!i122 23
+L0 14 379
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/top_module.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/top_module.sv|
+!i113 1
+R8
+R9
+vwptr_full
+R1
+R2
+!i10b 1
+!s100 4N2MVWlH^^Uk5FEJM1Zi91
+R3
+I:oYi4_Ojk1alWGL@OZZA62
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/wptr_full.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/wptr_full.sv
+!i122 16
+L0 6 48
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/wptr_full.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/wptr_full.sv|
+!i113 1
+R8
+R9
+vWrite_FIFO
+R1
+R14
+!i10b 1
+!s100 o]Filj`oBB;e5?_0X@<;B3
+R3
+I_ehl>9gH0j]h15`EndSS`1
+R4
+S1
+R0
+R13
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Write_FIFO.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Write_FIFO.sv
+!i122 22
+L0 13 204
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Write_FIFO.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi2apb_lib|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi2apb/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Write_FIFO.sv|
+!i113 1
+R8
+R9
+n@write_@f@i@f@o

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testMacNorm.elf.dir/testMacNorm.c.o"
-  "CMakeFiles/testMacNorm.elf.dir/testMacNorm.c.o.d"
   "testMacNorm.elf"
   "testMacNorm.elf.pdb"
 )

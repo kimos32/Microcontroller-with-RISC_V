@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bitDescriptor.elf.dir/bitDescriptor.c.o"
-  "CMakeFiles/bitDescriptor.elf.dir/bitDescriptor.c.o.d"
   "bitDescriptor.elf"
   "bitDescriptor.elf.pdb"
 )

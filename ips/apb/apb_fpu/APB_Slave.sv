@@ -2,8 +2,7 @@ module APB_Slave_interface
 #(
     parameter APB_ADDR_WIDTH = 32  
 )
-(   input                        CLK,
-    input                        RSTN,
+(
     
     input   [APB_ADDR_WIDTH-1:0] PADDR,
     input                 [31:0] PWDATA,
@@ -11,58 +10,63 @@ module APB_Slave_interface
     input                        PSEL,
     input                        PENABLE,
     output                [31:0] PRDATA,
-    output reg                   PREADY,
+    output                       PREADY,
     output                       PSLVERR,
 
 
-    input                 [31:0] data_slave,
-    input                        data_valid,
+    input                 [31:0] data_register,
 
-    output  reg            [1:0] register_addr,
-    output                       write,
-    output                       enable_reg,
-    output                [31:0] Wdata,
-    output                       FPU_enable
+
+    output  reg            [2:0] register_addr,
+    output                       write_enable,
+    output                       read_enable,
+    output                       enable_register,
+    output                [31:0] Wdata
+
 
 
 );
 
 
 
-localparam OP1_ADDR='h1A108000;
-localparam OP2_ADDR='h1A108004;
-localparam OpSelect_ADDR='h1A108008;
-localparam Flag_ADDR='h1A108012;
-localparam Result_ADDR='h1A10800C;
+localparam OP1_ADDR='h1A111000;
+localparam OP2_ADDR='h1A111004;
+localparam OpSelect_ADDR='h1A111008;
+localparam Flag_ADDR='h1A11100C;
+localparam Result_ADDR='h1A111010;
 
 
+
+reg     write_valid;
 ////////////Mapping of address////////
 
 always@(*)begin
+
+write_valid=1'b1;
 		case(PADDR)
 		OP1_ADDR:begin 
-        register_addr=2'b00;
-        PREADY=1'b1;
+        register_addr=3'b000;
+
         end 
 		OP2_ADDR:begin 
-        register_addr=2'b01;
-        PREADY=1'b1;
+        register_addr=3'b001;
+
         end 
 		OpSelect_ADDR:begin 
-        register_addr=2'b10;
-        PREADY=1;
+        register_addr=3'b010;
+
         end 
 		Flag_ADDR:begin 
-        register_addr=2'b11;
-        PREADY=1'b1;
+        register_addr=3'b011;
+ 
         end 
 		Result_ADDR:begin 
-        register_addr=2'b00;
-        PREADY=data_valid | 1;
+        register_addr=3'b100;
+        write_valid=1'b0;
         end 
 		default:begin 
-        register_addr=2'b00;
-        PREADY=1'b1;////this is an error that should be handled
+        register_addr=3'b000;
+
         end
         endcase
 end
@@ -71,24 +75,24 @@ end
 
 assign Wdata = PWDATA ;
 
-assign write = PWRITE ;
+assign write_enable = PWRITE && write_valid ;
+assign read_enable  = !PWRITE;
 
 ////////////Mapping of enable//////////
 
-assign enable_reg = (PSEL&&PENABLE&&PWRITE) ;
-assign FPU_enable = (PSEL&&PENABLE&&!PWRITE) ;
-
-//////////Mapping of data from slave/////
-
-assign PRDATA = data_slave ;
+assign enable_register = (PSEL&&PENABLE) ;
 
 
 
-///////always ready to recieve//////
+/////////Mapping of PRDATA//////
+assign PRDATA=data_register;
 
 
 
- //assign PREADY =(PWRITE)?1'b1: (1'b1 && data_valid) ;
+///////always ready to transmit//////
+
+assign PREADY=1'b1;
+
 
 assign PSLVERR = 1'b0;
 

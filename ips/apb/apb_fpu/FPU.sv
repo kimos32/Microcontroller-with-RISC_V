@@ -5,10 +5,13 @@ module FPU (
 	input       [31:0]       OP1,
 	input       [31:0]       OP2,
 	input       [2:0]        OP_select,
-	input                    enable,
+
 
 	output reg  [31:0]       Result,
-	output reg               data_valid
+	output reg               data_valid,
+	output                   zero_flag,
+	output                   INF_flag,
+	output                   NAN_flag
 
     );
 
@@ -49,14 +52,12 @@ end
 
 
 //////////////////////////ADD or SUB two floating point numbers//////////////////////
-FPU_Add2    Add1(.clk(clk),
-	        .rstn(rstn),
+FPU_Add2    Add1(
 	        .OP1(OP1),
 	        .OP2(OP2),
 	        .add_select(add_select),
 	        .sub_select(sub_select),
-	        .enable(enable),
-	        .Result(Add_Result),
+	        .Result_comb(Add_Result),
 	        .valid(Add_valid)
             );
 
@@ -66,9 +67,8 @@ FPU_MULT    MULT1(.clk(clk),
 	        .rstn(rstn),
 	        .OP1(OP1),
 	        .OP2(OP2),
-	        .enable(enable),
 	        .mult_select(mult_select),
-	        .Result(MULT_Result),
+	        .Result_comb(MULT_Result),
 	        .valid(Mult_valid)
 
             );
@@ -108,34 +108,13 @@ end
 
 
 
-/*//////////////////Validation of the output///////
-always @(posedge clk or negedge rstn) begin
-	if (!rstn) begin
-		// reset
-		count<=0;
-	end
-	else if(add_select || sub_select || mult_select) begin
-	    count<=count+1;
-	end
-	else begin
-		count<=0;
-	end
-		
-end*/
+/////////////////Generate Flags////////////////////
 
-always@(*)begin
-	
-	if(mult_select==1'b1)begin
-	   data_valid=Mult_valid;
-		
-	end
-	else if ((add_select || sub_select))begin
-		data_valid=Add_valid;
-	end
-	else begin
-		data_valid=1'b0;
-	end
-end
+
+assign zero_flag = !(|Result) ;
+assign INF_flag = (&Result[30:23]) && (!(|Result[22:0]))  ;
+assign NAN_flag = (&Result[30:23]) && (|Result[22:0]) ;
+
 
 
 

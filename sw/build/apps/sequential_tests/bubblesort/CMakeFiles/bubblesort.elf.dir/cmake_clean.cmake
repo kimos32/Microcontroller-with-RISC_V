@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bubblesort.elf.dir/bubblesort.c.o"
-  "CMakeFiles/bubblesort.elf.dir/bubblesort.c.o.d"
   "bubblesort.elf"
   "bubblesort.elf.pdb"
 )

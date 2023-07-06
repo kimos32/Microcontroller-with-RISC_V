@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.fft.elf.dir/fft.c.o"
-  "CMakeFiles/perfbench.fft.elf.dir/fft.c.o.d"
   "CMakeFiles/perfbench.fft.elf.dir/fft_test.c.o"
-  "CMakeFiles/perfbench.fft.elf.dir/fft_test.c.o.d"
   "perfbench.fft.elf"
   "perfbench.fft.elf.pdb"
 )

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bench.dir/src/bench.c.o"
-  "CMakeFiles/bench.dir/src/bench.c.o.d"
   "libbench.a"
   "libbench.pdb"
 )

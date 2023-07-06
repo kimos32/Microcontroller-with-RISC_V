@@ -13,6 +13,8 @@
 
 `define REF_CLK_PERIOD   (2*15.25us)  // 32.786 kHz --> FLL reset value --> 50 MHz
 `define CLK_PERIOD       40.00ns      // 25 MHz
+`define CLK_PERIOD_USB   20.83ns      // 48 MHz 
+parameter FS_Period = 83.3333ps;      // 48 MHz
 
 `define EXIT_SUCCESS  0
 `define EXIT_FAIL     1
@@ -74,6 +76,15 @@ module tb;
   logic [31:0]  gpio_out;
 
   logic [31:0]  recv_data;
+
+  logic         SIE_clk;
+  logic         UTMI_clk;
+  logic         TX_DP;
+  logic         TX_DM;
+  logic         DP;
+  logic         DM;
+  logic         TX_en;
+  
 
   jtag_i jtag_if();
 
@@ -186,7 +197,18 @@ module tb;
     .trstn_i           ( jtag_if.trstn   ),
     .tms_i             ( jtag_if.tms     ),
     .tdi_i             ( jtag_if.tdi     ),
-    .tdo_o             ( jtag_if.tdo     )
+    .tdo_o             ( jtag_if.tdo     ),
+
+    .Clk_axi           (s_clk), 
+    .Rst               (s_rst_n ),
+    .SIE_clk           (SIE_clk),
+    .UTMI_clk          (UTMI_clk),
+    .DP                (DP), 
+    .DM                (DM),
+    .TX_DP             (TX_DP),
+    .TX_DM             (TX_DM),
+    .TX_en             (TX_en)
+
   );
 
   generate
@@ -205,6 +227,24 @@ module tb;
         forever s_clk = #(`CLK_PERIOD/2) ~s_clk;
       end
     end
+  endgenerate
+
+  generate
+      initial
+      begin
+        #(`CLK_PERIOD_USB/2);
+        SIE_clk = 1'b1;
+        forever SIE_clk = #(`CLK_PERIOD_USB/2) ~SIE_clk;
+      end
+  endgenerate
+
+  generate
+      initial
+      begin
+        #(`CLK_PERIOD_USB/2);
+        UTMI_clk = 1'b1;
+        forever UTMI_clk = #(`CLK_PERIOD_USB/2) ~UTMI_clk;
+      end
   endgenerate
 
   logic use_qspi;
@@ -374,10 +414,91 @@ module tb;
       wait(gpio_out[8]);
 
     spi_check_return_codes(exit_status);
+    
 
     $fflush();
     $stop();
   end
+
+initial 
+begin
+    @(negedge TX_en)
+    @(negedge TX_en)
+    @(negedge TX_en)
+    @(negedge TX_en)
+    #1500ns
+    rx_data_HS();
+    EOP();
+    #100000ns;
+$stop;
+end
+
+task rx_data_HS;
+  begin
+
+SYNC();
+data(8'b11010010);
+end
+endtask
+
+task SYNC;
+  begin
+  @(negedge UTMI_clk)
+  DP = 1'b0;
+  DM = 1'b1;//k
+  #FS_Period
+  DP = 1'b1;
+  DM = 1'b0;//j
+  #FS_Period
+  
+  DP = 1'b0;
+  DM = 1'b1;//k
+  #FS_Period
+  DP = 1'b1;
+  DM = 1'b0;//j
+  #FS_Period
+
+  DP = 1'b0;
+  DM = 1'b1;//k
+  #FS_Period
+  DP = 1'b1;
+  DM = 1'b0;//j
+  #FS_Period
+  
+  DP = 1'b0;
+  DM = 1'b1;//k
+  #FS_Period
+  DP = 1'b0;
+  DM = 1'b1;//k
+  end
+endtask
+
+// SEND EOP PATTERN //
+task EOP;
+  begin
+  #FS_Period
+  DP = 1'b0;
+  DM = 1'b0;//SE0
+  #FS_Period
+  DP = 1'b0;
+  DM = 1'b0;//SE0
+  #FS_Period
+  DP = 1'b1;
+  DM = 1'b0;//j
+  end
+endtask
+
+// DATA IN //
+task data;
+input [7:0] data;
+begin
+for (int i=0; i<8 ;i = i+1) begin
+#FS_Period
+DP = data[i] ? DP: ~DP;
+DM = ~DP;
+end
+end
+endtask
 
   // TODO: this is a hack, do it properly!
   `include "tb_spi_pkg.sv"
@@ -386,3 +507,4 @@ module tb;
   `include "mem_dpi.svh"
 
 endmodule
+

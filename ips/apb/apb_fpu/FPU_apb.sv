@@ -19,11 +19,12 @@ module FPU_APB
 	);
 
 //////////APB Signals////////////
-wire      [1:0] register_addr;
-wire      [31:0] data_slave;
+wire      [2:0] register_addr;
+wire      [31:0] data_register;
 wire      [31:0] Wdata;
-wire             enable_reg;
-wire             write;
+wire             enable_register;
+wire             write_enable;
+wire             read_enable;
 
 
 ///////////////Register bank signals///////////////
@@ -31,17 +32,16 @@ wire      [31:0] OP1,OP2;
 wire      [2:0]  OP_select;
 wire      [31:0] Result_Fpu; 
 
+/////////////////////////FPU Signals////////
+wire              data_valid;
 
-///////////FPU Signals/////////
-wire            data_valid;
-wire            FPU_enable;
-
+ wire                        zero_flag;
+ wire                        INF_flag;
+ wire                        NAN_flag;
 
 APB_Slave_interface    #(.APB_ADDR_WIDTH(32))
 
-slave1 (.CLK(CLK),
-	    .RSTN(RSTN),
-	    .PADDR(PADDR),
+slave1 (.PADDR(PADDR),
 	    .PWDATA(PWDATA),
 	    .PWRITE(PWRITE),
 	    .PSEL(PSEL),
@@ -49,12 +49,11 @@ slave1 (.CLK(CLK),
 	    .PRDATA(PRDATA),
 	    .PREADY(PREADY),
 	    .PSLVERR(PSLVERR),
-	    .data_slave(Result_Fpu),
-	    .data_valid(data_valid),
+	    .data_register(data_register),
 	    .register_addr(register_addr),
-	    .write(write),
-	    .enable_reg(enable_reg),
-	    .FPU_enable(FPU_enable),
+	    .write_enable(write_enable),
+	    .read_enable(read_enable),
+	    .enable_register(enable_register),
 	    .Wdata(Wdata)
 	    );
 
@@ -64,9 +63,11 @@ FPU      FPU1(.clk(CLK),
 	          .OP1(OP1),
 	          .OP2(OP2),
 	          .OP_select(OP_select),
-	          .enable(FPU_enable),
 	          .Result(Result_Fpu),
-	          .data_valid(data_valid)
+	          .data_valid(data_valid),
+	          .zero_flag(zero_flag),
+	          .INF_flag(INF_flag),
+	          .NAN_flag(NAN_flag)
 );
 
 
@@ -74,19 +75,25 @@ FPU      FPU1(.clk(CLK),
 
 Register_Bank     #(
      .MEM_WIDTH (32),
-     .MEM_DEPTH (3) 
+     .MEM_DEPTH (5) 
 )
 
 reg1 (.CLK(CLK),
 	  .RSTN(RSTN),
-	  .ADDR(register_addr),
-	  .WDATA(Wdata),
-	  .WRITE(write),
-	  .ENABLE(enable_reg),
-	  .RDATA(data_slave),
+	  .register_addr(register_addr),
+	  .Wdata(Wdata),
+	  .enable_register(enable_register),
+	  .write_enable(write_enable),
+	  .read_enable(read_enable),
+	  .Result_Fpu(Result_Fpu),
+	  .Result_FPU_valid(data_valid),
+	  .data_register(data_register),
 	  .OP1(OP1),
 	  .OP2(OP2),
-	  .OP_select(OP_select)
+	  .OP_select(OP_select),
+	  .zero_flag(zero_flag),
+	  .NAN_flag(NAN_flag),
+	  .INF_flag(INF_flag)
 	  );
 
 

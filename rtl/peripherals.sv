@@ -20,7 +20,10 @@ module peripherals
     parameter AXI_USER_WIDTH       = 6,
     parameter AXI_SLAVE_ID_WIDTH   = 6,
     parameter AXI_MASTER_ID_WIDTH  = 6,
-    parameter ROM_START_ADDR       = 32'h8000
+    parameter ROM_START_ADDR       = 32'h8000,
+    //USB parameters
+    parameter ADDR_W = 32,
+    parameter Data_W = 32
   )
   (
     // Clock and Reset
@@ -96,8 +99,22 @@ module peripherals
 
     output logic [31:0] [5:0] pad_cfg_o,
     output logic       [31:0] pad_mux_o,
-    output logic       [31:0] boot_addr_o
-  );
+    output logic       [31:0] boot_addr_o,
+    
+    //USB IO
+    AXI_BUS.Slave axi_usb_slave,
+
+    //USB IN
+    input wire                SIE_clk,
+    input wire                UTMI_clk,
+    input                     DP, DM,
+
+    //USB OUT
+    output                    TX_DP,
+    output                    TX_DM,
+    output                    TX_en
+
+);
 
   localparam APB_ADDR_WIDTH  = 32;
   localparam APB_NUM_SLAVES  = 9;
@@ -179,11 +196,90 @@ module peripherals
 
   //////////////////////////////////////////////////////////////////
   ///                                                            ///
+  /// USB Slave, AXI Master                                      ///
+  ///                                                            ///
+  //////////////////////////////////////////////////////////////////
+
+/*  axi_usb axi_usb_slave_i
+  (
+   .Clk_axi(Clk_axi), 
+   .Rst(Rst),
+   .R_Valid_Address(axi_usb_slave.ar_valid), 
+   .Read_Ready(axi_usb_slave.r_ready),
+   .Read_Address_axi(axi_usb_slave.ar_addr),
+   .R_Prot(axi_usb_slave.ar_prot),
+
+   .Write_Address_axi(axi_usb_slave.aw_addr),
+   .W_Prot(axi_usb_slave.aw_prot),
+   .Write_Valid(axi_usb_slave.w_valid),
+   .Write_Data_axi(axi_usb_slave.w_data),
+   .Write_Strobe(axi_usb_slave.w_strb),
+   .SIE_clk(SIE_clk),
+   .UTMI_clk(UTMI_clk),
+   .DP(DP),
+   .DM(DM),
+   .TX_DP(TX_DP),
+   .TX_DM(TX_DM),
+   .TX_en(TX_en),
+   .R_Ready_Address(axi_usb_slave.ar_ready), 
+   .Valid_Data_R(axi_usb_slave.r_valid),
+   .Write_Ready(axi_usb_slave.w_ready), 
+   .Read_Data_axi(axi_usb_slave.r_data),
+   .b_valid(axi_usb_slave.b_valid),
+   .b_ready(axi_usb_slave.b_ready)
+  );*/
+
+USB_axicore #(.ADDR_W(32), .Data_W(32), .usb_mem_W(6),.DSIZE(8),.ASIZE(5),.b_a_w(2), .f_n_w(4), 
+    .MEM_ADDR_WIDTH(6), .MEM_NUM_COL(4), .MEM_COL_WIDTH(32), .MEM_DATA_WIDTH(128) ) U0_USB_axicore(
+.clk(clk_i),
+.reset(rst_n),
+.ARPROT(axi_usb_slave.ar_prot),
+.ARID(axi_usb_slave.ar_id),
+.ARADDR(axi_usb_slave.ar_addr),
+.ARLEN(axi_usb_slave.ar_len),
+.ARSIZE(axi_usb_slave.ar_size),
+.ARBURST(axi_usb_slave.ar_burst),
+.ARVALID(axi_usb_slave.ar_valid),
+.ARREADY(axi_usb_slave.ar_ready),
+.RREADY(axi_usb_slave.r_ready),
+.RID(axi_usb_slave.r_id),
+.RLAST(axi_usb_slave.r_last),
+.RDATA(axi_usb_slave.r_data),
+.RRESP(axi_usb_slave.r_resp),
+.RVALID(axi_usb_slave.r_valid),
+.AWID(axi_usb_slave.aw_id),
+.AWADDR(axi_usb_slave.aw_addr),
+.AWLEN(axi_usb_slave.aw_len),
+.AWSIZE(axi_usb_slave.aw_size),
+.AWBURST(axi_usb_slave.aw_burst),
+.AWVALID(axi_usb_slave.aw_valid),
+.AWPROT(axi_usb_slave.aw_prot),
+.AWREADY(axi_usb_slave.aw_ready),
+.WDATA(axi_usb_slave.w_data),
+.WLAST(axi_usb_slave.w_last),
+.WSTRB(axi_usb_slave.w_strb),
+.WVALID(axi_usb_slave.w_valid),
+.WREADY(axi_usb_slave.w_ready),
+.BREADY(axi_usb_slave.b_ready),
+.BID(axi_usb_slave.b_id),
+.BRESP(axi_usb_slave.b_resp),
+.BVALID(axi_usb_slave.b_valid),
+.SIE_clk(SIE_clk),
+.UTMI_clk(UTMI_clk),
+.DP(DP), 
+.DM(DM),
+.TX_DP(TX_DP),
+.TX_DM(TX_DM),
+.TX_en(TX_en)
+);
+
+  //////////////////////////////////////////////////////////////////
+  ///                                                            ///
   /// AXI2APB Bridge                                             ///
   ///                                                            ///
   //////////////////////////////////////////////////////////////////
 
-  axi2apb_wrap
+  /* axi2apb_wrap
   #(
       .AXI_ADDR_WIDTH ( AXI_ADDR_WIDTH     ),
       .AXI_DATA_WIDTH ( AXI_DATA_WIDTH     ),
@@ -200,6 +296,82 @@ module peripherals
     .axi_slave ( slave      ),
 
     .apb_master( s_apb_bus  )
+  );*/
+
+axi2apb_wrap
+  #(
+      .AXI_ADDR_WIDTH ( AXI_ADDR_WIDTH     ),
+      .AXI_DATA_WIDTH ( AXI_DATA_WIDTH     ),
+      .AXI_USER_WIDTH ( AXI_USER_WIDTH     ),
+      .AXI_ID_WIDTH   ( AXI_SLAVE_ID_WIDTH ),
+      .APB_ADDR_WIDTH ( APB_ADDR_WIDTH     )
+  )
+  axi2apb_i
+  (
+    .clk_i     ( clk_i      ),
+    .rst_ni    ( rst_n      ),
+    .test_en_i ( testmode_i ),
+
+ 
+
+    .axi_slave ( slave      ),
+
+ 
+
+    .apb_master( s_apb_bus  ),
+
+ 
+
+    .pready0(s_uart_bus.pready), 
+            .pready1(s_gpio_bus.pready), 
+            .pready2(s_spi_bus.pready), 
+            .pready3(s_timer_bus.pready), 
+            .pready4(s_event_unit_bus.pready), 
+            .pready5(s_i2c_bus.pready), 
+            .pready6(s_fll_bus.pready), 
+            .pready7(s_soc_ctrl_bus.pready), 
+            .pready8(s_debug_bus.pready), 
+            .pready9(s_fpu_bus.pready      ),
+
+ 
+
+            .pslverr0(s_uart_bus.pslverr), 
+            .pslverr1(s_gpio_bus.pslverr), 
+            .pslverr2(s_spi_bus.pslverr), 
+            .pslverr3(s_timer_bus.pslverr), 
+            .pslverr4(s_event_unit_bus.pslverr), 
+            .pslverr5(s_i2c_bus.pslverr),
+            .pslverr6(s_fll_bus.pslverr), 
+            .pslverr7(s_soc_ctrl_bus.pslverr),
+            .pslverr8(s_debug_bus.pslverr), 
+            .pslverr9(s_fpu_bus.pslverr),
+
+ 
+
+            .prdata0(s_uart_bus.prdata), 
+            .prdata1(s_gpio_bus.prdata), 
+            .prdata2(s_spi_bus.prdata), 
+            .prdata3(s_timer_bus.prdata), 
+            .prdata4(s_event_unit_bus.prdata), 
+            .prdata5(s_i2c_bus.prdata), 
+            .prdata6(s_fll_bus.prdata), 
+            .prdata7(s_soc_ctrl_bus.prdata), 
+            .prdata8(s_debug_bus.prdata), 
+            .prdata9( s_fpu_bus.prdata),
+
+ 
+
+// outputs to APB slave from APB master interface
+            .PSEL0(s_uart_bus.psel), 
+            .PSEL1(s_gpio_bus.psel), 
+            .PSEL2(s_spi_bus.psel), 
+            .PSEL3(s_timer_bus.psel), 
+            .PSEL4(s_event_unit_bus.psel), 
+            .PSEL5(s_i2c_bus.psel), 
+            .PSEL6(s_fll_bus.psel), 
+            .PSEL7(s_soc_ctrl_bus.psel), 
+            .PSEL8(s_debug_bus.psel), 
+            .PSEL9(s_fpu_bus.psel)
   );
 
   //////////////////////////////////////////////////////////////////
@@ -208,7 +380,7 @@ module peripherals
   ///                                                            ///
   //////////////////////////////////////////////////////////////////
 
-  periph_bus_wrap
+ /* periph_bus_wrap
   #(
      .APB_ADDR_WIDTH( APB_ADDR_WIDTH ),
      .APB_DATA_WIDTH( 32             )
@@ -230,7 +402,7 @@ module peripherals
      .fll_master        ( s_fll_bus        ),
      .soc_ctrl_master   ( s_soc_ctrl_bus   ),
      .debug_master      ( s_debug_bus      )
-  );
+  ); */
 
   //////////////////////////////////////////////////////////////////
   ///                                                            ///
@@ -239,20 +411,26 @@ module peripherals
   //////////////////////////////////////////////////////////////////
 
   `ifndef VERILATOR
-  apb_uart apb_uart_i (
+ apb_uart apb_uart_i (
     .CLK      ( clk_int[1]   ),
     .RSTN     ( rst_n        ),
 
+ 
+
     .PSEL     ( s_uart_bus.psel    ),
-    .PENABLE  ( s_uart_bus.penable    ),
-    .PWRITE   ( s_uart_bus.pwrite     ),
-    .PADDR    ( s_uart_bus.paddr[4:2] ),
-    .PWDATA   ( s_uart_bus.pwdata     ),
+    .PENABLE  ( s_apb_bus.penable    ),
+    .PWRITE   ( s_apb_bus.pwrite     ),
+    .PADDR    ( s_apb_bus.paddr[4:2] ),
+    .PWDATA   ( s_apb_bus.pwdata     ),
     .PRDATA   ( s_uart_bus.prdata  ),
     .PREADY   ( s_uart_bus.pready  ),
     .PSLVERR  ( s_uart_bus.pslverr ),
 
+ 
+
     .INT      ( s_uart_event ),   //Interrupt output
+
+ 
 
     .OUT1N    (),                    //Output 1
     .OUT2N    (),                    //Output 2
@@ -276,10 +454,10 @@ module peripherals
       .RSTN     ( rst_n                 ),
 
       .PSEL     ( s_uart_bus.psel       ),
-      .PENABLE  ( s_uart_bus.penable    ),
-      .PWRITE   ( s_uart_bus.pwrite     ),
-      .PADDR    ( s_uart_bus.paddr[4:2] ),
-      .PWDATA   ( s_uart_bus.pwdata     ),
+      .PENABLE  ( s_apb_bus.penable    ),
+      .PWRITE   ( s_apb_bus.pwrite     ),
+      .PADDR    ( s_apb_bus.paddr[4:2] ),
+      .PWDATA   ( s_apb_bus.pwdata     ),
       .PRDATA   ( s_uart_bus.prdata     ),
       .PREADY   ( s_uart_bus.pready     ),
       .PSLVERR  ( s_uart_bus.pslverr    ),
@@ -306,11 +484,11 @@ module peripherals
    (
 	.CLK		(clk_int[1]	),
 	.RSTN		(rst_n		),
-	.PADDR		(s_fpu_bus.paddr),
-	.PWDATA		(s_fpu_bus.pwdata),
-	.PWRITE		(s_fpu_bus.pwrite),
+	.PADDR		(s_apb_bus.paddr),
+	.PWDATA		(s_apb_bus.pwdata),
+	.PWRITE		(s_apb_bus.pwrite),
 	.PSEL		(s_fpu_bus.psel),
-	.PENABLE	(s_fpu_bus.penable),
+	.PENABLE	(s_apb_bus.penable),
 	.PRDATA		(s_fpu_bus.prdata),
 	.PSLVERR	(s_fpu_bus.pslverr),
 	.PREADY		(s_fpu_bus.pready)
@@ -329,11 +507,11 @@ module peripherals
     .HCLK       ( clk_int[2]   ),
     .HRESETn    ( rst_n        ),
 
-    .PADDR      ( s_gpio_bus.paddr[11:0]),
-    .PWDATA     ( s_gpio_bus.pwdata     ),
-    .PWRITE     ( s_gpio_bus.pwrite     ),
+    .PADDR      ( s_apb_bus.paddr[11:0]),
+    .PWDATA     ( s_apb_bus.pwdata     ),
+    .PWRITE     ( s_apb_bus.pwrite     ),
     .PSEL       ( s_gpio_bus.psel       ),
-    .PENABLE    ( s_gpio_bus.penable    ),
+    .PENABLE    ( s_apb_bus.penable    ),
     .PRDATA     ( s_gpio_bus.prdata     ),
     .PREADY     ( s_gpio_bus.pready     ),
     .PSLVERR    ( s_gpio_bus.pslverr    ),
@@ -363,11 +541,11 @@ module peripherals
     .HCLK         ( clk_int[3]   ),
     .HRESETn      ( rst_n        ),
 
-    .PADDR        ( s_spi_bus.paddr[11:0]),
-    .PWDATA       ( s_spi_bus.pwdata     ),
-    .PWRITE       ( s_spi_bus.pwrite     ),
+    .PADDR        ( s_apb_bus.paddr[11:0]),
+    .PWDATA       ( s_apb_bus.pwdata     ),
+    .PWRITE       ( s_apb_bus.pwrite     ),
     .PSEL         ( s_spi_bus.psel       ),
-    .PENABLE      ( s_spi_bus.penable    ),
+    .PENABLE      ( s_apb_bus.penable    ),
     .PRDATA       ( s_spi_bus.prdata     ),
     .PREADY       ( s_spi_bus.pready     ),
     .PSLVERR      ( s_spi_bus.pslverr    ),
@@ -402,11 +580,11 @@ module peripherals
     .HCLK       ( clk_int[4]   ),
     .HRESETn    ( rst_n        ),
 
-    .PADDR      ( s_timer_bus.paddr[11:0]),
-    .PWDATA     ( s_timer_bus.pwdata     ),
-    .PWRITE     ( s_timer_bus.pwrite     ),
+    .PADDR      ( s_apb_bus.paddr[11:0]),
+    .PWDATA     ( s_apb_bus.pwdata     ),
+    .PWRITE     ( s_apb_bus.pwrite     ),
     .PSEL       ( s_timer_bus.psel       ),
-    .PENABLE    ( s_timer_bus.penable    ),
+    .PENABLE    ( s_apb_bus.penable    ),
     .PRDATA     ( s_timer_bus.prdata     ),
     .PREADY     ( s_timer_bus.pready     ),
     .PSLVERR    ( s_timer_bus.pslverr    ),
@@ -427,11 +605,11 @@ module peripherals
     .HCLK             ( clk_int[5]   ),
     .HRESETn          ( rst_n        ),
 
-    .PADDR            ( s_event_unit_bus.paddr[11:0]),
-    .PWDATA           ( s_event_unit_bus.pwdata     ),
-    .PWRITE           ( s_event_unit_bus.pwrite     ),
+    .PADDR            ( s_apb_bus.paddr[11:0]),
+    .PWDATA           ( s_apb_bus.pwdata     ),
+    .PWRITE           ( s_apb_bus.pwrite     ),
     .PSEL             ( s_event_unit_bus.psel       ),
-    .PENABLE          ( s_event_unit_bus.penable    ),
+    .PENABLE          ( s_apb_bus.penable    ),
     .PRDATA           ( s_event_unit_bus.prdata     ),
     .PREADY           ( s_event_unit_bus.pready     ),
     .PSLVERR          ( s_event_unit_bus.pslverr    ),
@@ -458,11 +636,11 @@ module peripherals
     .HCLK         ( clk_int[6]    ),
     .HRESETn      ( rst_n         ),
 
-    .PADDR        ( s_i2c_bus.paddr[11:0] ),
-    .PWDATA       ( s_i2c_bus.pwdata      ),
-    .PWRITE       ( s_i2c_bus.pwrite      ),
+    .PADDR        ( s_apb_bus.paddr[11:0] ),
+    .PWDATA       ( s_apb_bus.pwdata      ),
+    .PWRITE       ( s_apb_bus.pwrite      ),
     .PSEL         ( s_i2c_bus.psel        ),
-    .PENABLE      ( s_i2c_bus.penable     ),
+    .PENABLE      ( s_apb_bus.penable     ),
     .PRDATA       ( s_i2c_bus.prdata      ),
     .PREADY       ( s_i2c_bus.pready      ),
     .PSLVERR      ( s_i2c_bus.pslverr     ),
@@ -487,11 +665,11 @@ module peripherals
       .HCLK        ( clk_int[7]   ),
       .HRESETn     ( rst_n        ),
 
-      .PADDR       ( s_fll_bus.paddr[11:0]),
-      .PWDATA      ( s_fll_bus.pwdata     ),
-      .PWRITE      ( s_fll_bus.pwrite     ),
+      .PADDR       ( s_apb_bus.paddr[11:0]),
+      .PWDATA      ( s_apb_bus.pwdata     ),
+      .PWRITE      ( s_apb_bus.pwrite     ),
       .PSEL        ( s_fll_bus.psel       ),
-      .PENABLE     ( s_fll_bus.penable    ),
+      .PENABLE     ( s_apb_bus.penable    ),
       .PRDATA      ( s_fll_bus.prdata     ),
       .PREADY      ( s_fll_bus.pready     ),
       .PSLVERR     ( s_fll_bus.pslverr    ),
@@ -521,18 +699,18 @@ module peripherals
 
     apb_pulpino
     #(
-      .BOOT_ADDR ( ROM_START_ADDR )
+      .BOOT_ADDR ( 32'h0000 )
     )
     apb_pulpino_i
     (
       .HCLK        ( clk_i        ),
       .HRESETn     ( rst_n        ),
 
-      .PADDR       ( s_soc_ctrl_bus.paddr[11:0]),
-      .PWDATA      ( s_soc_ctrl_bus.pwdata     ),
-      .PWRITE      ( s_soc_ctrl_bus.pwrite     ),
+      .PADDR       ( s_apb_bus.paddr[11:0]),
+      .PWDATA      ( s_apb_bus.pwdata     ),
+      .PWRITE      ( s_apb_bus.pwrite     ),
       .PSEL        ( s_soc_ctrl_bus.psel       ),
-      .PENABLE     ( s_soc_ctrl_bus.penable    ),
+      .PENABLE     ( s_apb_bus.penable    ),
       .PRDATA      ( s_soc_ctrl_bus.prdata     ),
       .PREADY      ( s_soc_ctrl_bus.pready     ),
       .PSLVERR     ( s_soc_ctrl_bus.pslverr    ),
@@ -559,11 +737,11 @@ module peripherals
     .clk_i                ( clk_i                   ),
     .rst_ni               ( rst_n                   ),
 
-    .PADDR                ( s_debug_bus.paddr       ),
-    .PWDATA               ( s_debug_bus.pwdata      ),
-    .PWRITE               ( s_debug_bus.pwrite      ),
+    .PADDR                ( s_apb_bus.paddr       ),
+    .PWDATA               ( s_apb_bus.pwdata      ),
+    .PWRITE               ( s_apb_bus.pwrite      ),
     .PSEL                 ( s_debug_bus.psel        ),
-    .PENABLE              ( s_debug_bus.penable     ),
+    .PENABLE              ( s_apb_bus.penable     ),
     .PRDATA               ( s_debug_bus.prdata      ),
     .PREADY               ( s_debug_bus.pready      ),
     .PSLVERR              ( s_debug_bus.pslverr     ),

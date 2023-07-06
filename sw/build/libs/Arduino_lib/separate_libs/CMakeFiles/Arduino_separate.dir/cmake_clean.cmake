@@ -1,10 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o"
-  "CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o.d"
   "CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o"
-  "CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o.d"
   "CMakeFiles/Arduino_separate.dir/src/twi.c.o"
-  "CMakeFiles/Arduino_separate.dir/src/twi.c.o.d"
   "libArduino_separate.a"
   "libArduino_separate.pdb"
 )

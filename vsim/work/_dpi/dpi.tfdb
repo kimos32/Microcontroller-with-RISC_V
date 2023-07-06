@@ -6,16 +6,16 @@ size
 rtl_get_tdo
 5 9
 jtag_init
-7 45
-/home/ahmed98/pulpino/vsim/..//tb/jtag_dpi.sv
-15 45
-/home/ahmed98/pulpino/vsim/..//tb/mem_dpi.svh
 8 9
 jtag_recv
 3 4
 addr
 10 6
 trst_o
+7 74
+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//tb/jtag_dpi.sv
+15 74
+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//tb/mem_dpi.svh
 12 5
 tms_o
 16 8

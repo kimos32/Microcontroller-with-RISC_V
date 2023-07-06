@@ -8,563 +8,539 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/ahmed98/pulpino/vsim
-vapb_regs_top
+Z0 d/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim
+vaddress_controller
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683790790
+Z2 !s110 1688597023
 !i10b 1
-!s100 UJmRE;>4AjP]ce`Ei;5zX0
+!s100 M=_D01BU9m1bTVzDi:R:l0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I^ZnD8IGU9dklQR36WbQeM3
+IlYIQH^?8U_FYi]7B0bIm>3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1677614601
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/apb_regs_top.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/apb_regs_top.sv
-!i122 0
-L0 72 112
+Z5 w1682504358
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/fifo_controller.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/fifo_controller.sv
+!i122 9
+L0 1 27
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1683790790.000000
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/apb_regs_top.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/apb_regs_top.sv|
+Z7 !s108 1688597023.000000
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/fifo_controller.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/fifo_controller.sv|
 !i113 1
-Z8 o-suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib
-Z9 !s92 -suppress 2583 -quiet -sv -work /home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib +incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.
+Z8 o-suppress 2583 -quiet -sv -work /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib
+Z9 !s92 -suppress 2583 -quiet -sv -work /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib +incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.
 Z10 tCvgOpt 0
-vaxi_address_decoder_AR
+vAR_crossbar
 R1
 R2
 !i10b 1
-!s100 BUlYaSK0ViRZ50cST8hhX1
+!s100 XJ3J`f;36dG8[o;4KH5Z@3
 R3
-I7m=A:J=RC^dL3;She6?Tk0
+IBH_kh=Q`GK[Y9`MWXgBzG1
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AR.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AR.sv
-!i122 1
-L0 42 186
+w1687779762
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_crossbar.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_crossbar.sv
+!i122 0
+L0 1 411
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AR.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AR.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_crossbar.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_crossbar.sv|
 !i113 1
 R8
 R9
 R10
-naxi_address_decoder_@a@r
-vaxi_address_decoder_AW
+n@a@r_crossbar
+vAW_crossbar
 R1
 R2
 !i10b 1
-!s100 de?eLd2O3@FHg`dKe@L]z1
+!s100 nf^kgoX03JJK31zaOAeR41
 R3
-IZO@Yd;NYzml<HOHka_mlB0
+IGZ`]T?MQE8ONDiacH3;@S1
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AW.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AW.sv
+w1687779790
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AW_crossbar.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AW_crossbar.sv
 !i122 2
-L0 42 235
+L0 1 408
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AW.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_AW.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AW_crossbar.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AW_crossbar.sv|
 !i113 1
 R8
 R9
 R10
-naxi_address_decoder_@a@w
-vaxi_address_decoder_BR
+n@a@w_crossbar
+vAXI_interconnect
 R1
 R2
 !i10b 1
-!s100 8WbXl03;aWkHRJhzO5Ck93
+!s100 U[Z[8iNJOc^=zH:G??bS00
 R3
-ID<^UB^cGPOz_5T:?Vz:z82
+IT>?nEmXU9;Fc[cUX?FcTU2
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BR.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BR.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AXI_interconnect.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AXI_interconnect.sv
 !i122 3
-L0 45 44
+L0 1 890
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BR.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BR.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AXI_interconnect.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AXI_interconnect.sv|
 !i113 1
 R8
 R9
 R10
-naxi_address_decoder_@b@r
-vaxi_address_decoder_BW
+n@a@x@i_interconnect
+vB_crossbar
 R1
 R2
 !i10b 1
-!s100 >024CWAKL^z@GbYYQDzQj1
+!s100 :2TgKNf9UF59_MBA1H>6U3
 R3
-ITW_zDef4RNcUNV7JN3VT10
+IT4FG`gA5a<j5eUUX6]V1_0
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BW.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BW.sv
-!i122 4
-L0 43 45
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BW.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_BW.sv|
-!i113 1
-R8
-R9
-R10
-naxi_address_decoder_@b@w
-vaxi_address_decoder_DW
-R1
-R2
-!i10b 1
-!s100 ^oNo>j=AY<NQcL?0=fR`b0
-R3
-IeLXY;IV_iBUeo34QTO8P?2
-R4
-S1
-R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_DW.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_DW.sv
+w1687014688
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_crossbar.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_crossbar.sv
 !i122 5
-L0 45 82
+L0 1 203
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_DW.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_address_decoder_DW.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_crossbar.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_crossbar.sv|
 !i113 1
 R8
 R9
 R10
-naxi_address_decoder_@d@w
-vaxi_AR_allocator
+n@b_crossbar
+vB_order_inter_cont
 R1
 R2
 !i10b 1
-!s100 d8NfH=Jz_H<fPY5z<fhEX2
+!s100 ;C7RcS3aXEQ@@Wn]E;=UN2
 R3
-Ib[OfoSJE6^S<Ii^fh]RX?3
+I31FEU`dH]97N]eZ2ao7i;1
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AR_allocator.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AR_allocator.sv
-!i122 6
-L0 42 110
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AR_allocator.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AR_allocator.sv|
-!i113 1
-R8
-R9
-R10
-naxi_@a@r_allocator
-vaxi_ArbitrationTree
-R1
-R2
-!i10b 1
-!s100 7FM03YzKi]^244IeTlD2`1
-R3
-IMjS8h[UOLd2FZ8igQg98T1
-R4
-S1
-R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_ArbitrationTree.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_ArbitrationTree.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_order_inter_cont.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_order_inter_cont.sv
 !i122 7
-L0 44 257
+L0 1 122
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_ArbitrationTree.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_ArbitrationTree.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_order_inter_cont.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_order_inter_cont.sv|
 !i113 1
 R8
 R9
 R10
-naxi_@arbitration@tree
-vaxi_AW_allocator
+n@b_order_inter_cont
+vB_round_robin_arbiter
 R1
 R2
 !i10b 1
-!s100 i[DUQWn6Q0nSAO5ZUbbh=2
+!s100 G40ibL:=^E7ON6<R<9ngV0
 R3
-Iz[gjARIQZZHZ<c:S]4f:^3
+IkklYc^6hdzTd]@m`JdG1E1
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AW_allocator.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AW_allocator.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_round_robin_arbiter.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_round_robin_arbiter.sv
 !i122 8
-L0 42 122
+L0 1 466
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AW_allocator.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_AW_allocator.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_round_robin_arbiter.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/B_round_robin_arbiter.sv|
 !i113 1
 R8
 R9
 R10
-naxi_@a@w_allocator
-vaxi_BR_allocator
+n@b_round_robin_arbiter
+vBchannel_interconnect
 R1
 R2
 !i10b 1
-!s100 F?HZ`liIK8c5b^1]?cLS13
+!s100 b;OzPBo4GR10:R;Fh=S2e2
 R3
-I25eckoZ`FoE^XNn>fK6Vh3
+IjnYGUPE:m[6Ff=IJL[jbY2
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BR_allocator.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BR_allocator.sv
-!i122 9
-L0 44 358
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Bchannel_interconnect.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Bchannel_interconnect.sv
+!i122 4
+L0 1 119
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/./defines.v|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BR_allocator.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BR_allocator.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Bchannel_interconnect.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Bchannel_interconnect.sv|
 !i113 1
 R8
 R9
 R10
-naxi_@b@r_allocator
-vaxi_BW_allocator
+n@bchannel_interconnect
+vBIDs_trans_counter
 R1
 R2
 !i10b 1
-!s100 11gaFDjNF<A5OR;@;AFab3
+!s100 <cU8MI4`1Y9l9T<MYXkcM0
 R3
-I1OPAk[5VA75FdfDb>Ke8Z2
+IhA?O6eXl3TWL;Ym[8Td1a3
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BW_allocator.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BW_allocator.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/BIDs_trans_counter.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/BIDs_trans_counter.sv
+!i122 6
+Z11 L0 1 34
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/BIDs_trans_counter.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/BIDs_trans_counter.sv|
+!i113 1
+R8
+R9
+R10
+n@b@i@ds_trans_counter
+vfull_fifo_solver
+R1
+R2
+!i10b 1
+!s100 jd4onNKj8lL[]ScR<EaO92
+R3
+IXUiF8O:GiU4CDFIOl<Bz]2
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/mux_for_valid_ready.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/mux_for_valid_ready.sv
 !i122 10
-L0 45 272
+L0 1 36
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/./defines.v|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BW_allocator.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_BW_allocator.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/mux_for_valid_ready.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/mux_for_valid_ready.sv|
 !i113 1
 R8
 R9
 R10
-naxi_@b@w_allocator
-vaxi_DW_allocator
+vR_crossbar
 R1
 R2
 !i10b 1
-!s100 J4nCjNaPZMjDQ_f4LbmT72
+!s100 VoEh5naS512I_0_2R9H_D3
 R3
-I?S`bJSBWBANYA>b<4lkdn0
+IXKB5f13VmcC>I14a>2K?71
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_DW_allocator.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_DW_allocator.sv
-!i122 11
-L0 44 221
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_DW_allocator.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_DW_allocator.sv|
-!i113 1
-R8
-R9
-R10
-naxi_@d@w_allocator
-vaxi_FanInPrimitive_Req
-R1
-R2
-!i10b 1
-!s100 WcdVBTSoe_VfhO3<[fci82
-R3
-I9c[RTVjUJ8oeViIm0JT>N0
-R4
-S1
-R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_FanInPrimitive_Req.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_FanInPrimitive_Req.sv
+w1688058745
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_crossbar.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_crossbar.sv
 !i122 12
-L0 42 73
+L0 1 237
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_FanInPrimitive_Req.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_FanInPrimitive_Req.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_crossbar.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_crossbar.sv|
 !i113 1
 R8
 R9
 R10
-naxi_@fan@in@primitive_@req
-vaxi_multiplexer
+n@r_crossbar
+vR_order_inter_cont
 R1
 R2
 !i10b 1
-!s100 NS]8=HR67Va1g9eEUB4J92
+!s100 KHfC[Rhl=kI[EDmYS0[^K0
 R3
-InRcN:_`4NFbh:2ZXY2ND^0
+IIc7_6YMm1]DAijnM9GFXN1
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_multiplexer.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_multiplexer.sv
-!i122 13
-L0 42 16
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_multiplexer.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_multiplexer.sv|
-!i113 1
-R8
-R9
-R10
-vaxi_node
-R1
-R2
-!i10b 1
-!s100 eiC=W7NU2d8fM:hLA5>7M1
-R3
-IXdRHE:cABSRTLZTAB12<c0
-R4
-S1
-R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_order_inter_cont.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_order_inter_cont.sv
 !i122 14
-L0 43 609
+L0 1 126
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/./defines.v|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_order_inter_cont.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_order_inter_cont.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_node_wrap
+n@r_order_inter_cont
+vR_round_robin_arbiter
 R1
-R2
+Z12 !s110 1688597024
 !i10b 1
-!s100 LWECISk9I6?lYoSZP`jgQ2
+!s100 5dh4T;4LS:mkOYGi<JA[G1
 R3
-IYd0en5PeLIFLbfWR0C3V70
+IPGjzUQ2ihoUO9l87_LRgE0
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_round_robin_arbiter.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_round_robin_arbiter.sv
 !i122 15
-L0 43 569
+L0 1 483
+R6
+r1
+!s85 0
+31
+Z13 !s108 1688597024.000000
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_round_robin_arbiter.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/R_round_robin_arbiter.sv|
+!i113 1
+R8
+R9
+R10
+n@r_round_robin_arbiter
+vRchannel_interconnect
+R1
+R2
+!i10b 1
+!s100 0mAU^GUhD>hTiFS6kf^Vn1
+R3
+IO;=l08mnDa=97ehz`Q8NQ2
+R4
+S1
+R0
+R5
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Rchannel_interconnect.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Rchannel_interconnect.sv
+!i122 11
+L0 1 178
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/./defines.v|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap.sv|
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Rchannel_interconnect.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/Rchannel_interconnect.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_node_wrap_with_slices
+n@rchannel_interconnect
+vread_id_generator
 R1
 R2
 !i10b 1
-!s100 DQbBnL?Y`R:blmU5GFQV02
+!s100 2PTOD;5mhl?=b?@2L[^=a2
 R3
-IZPz7GLV``96;f[BSgfeNK1
+ISg2n21=::aUamNWb?ISk`0
+R4
+S1
+R0
+w1688058927
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_ID_generator.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_ID_generator.sv
+!i122 1
+Z14 L0 1 67
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_ID_generator.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/AR_ID_generator.sv|
+!i113 1
+R8
+R9
+R10
+vRIDs_trans_counter
+R1
+R2
+!i10b 1
+!s100 nSM_CDN@_nPPb`zOMX_`91
+R3
+IRChz@64IH2[YU6e;_V?F22
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap_with_slices.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap_with_slices.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/RIDs_trans_counter.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/RIDs_trans_counter.sv
+!i122 13
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/RIDs_trans_counter.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/RIDs_trans_counter.sv|
+!i113 1
+R8
+R9
+R10
+n@r@i@ds_trans_counter
+vsynnch_fifo
+R1
+R12
+!i10b 1
+!s100 G?>2ecUbm7Db<Y557Vc6o2
+R3
+I9lzK8`o<0@0o8SYiJ0^jG0
+R4
+S1
+R0
+w1688058904
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/synch_fifo.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/synch_fifo.sv
 !i122 16
-L0 43 159
+L0 1 83
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/./defines.v|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap_with_slices.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_node_wrap_with_slices.sv|
+R13
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/synch_fifo.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/synch_fifo.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_regs_top
+vW_crossbar
 R1
-R2
+R12
 !i10b 1
-!s100 3d@<=CRhcQcJ>:5o>@8Cj0
+!s100 VIz]V`TL@`]nP:]TX^=LO2
 R3
-I^^5Yf3h_HZgeTfRJh<TZc3
+ITd2Re024BT:He?ZFnd3Xo1
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_regs_top.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_regs_top.sv
+w1687779886
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/W_crossbar.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/W_crossbar.sv
 !i122 17
-L0 92 371
+L0 1 248
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_regs_top.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_regs_top.sv|
+R13
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/W_crossbar.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/W_crossbar.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_request_block
+n@w_crossbar
+vW_id_generator
 R1
-R2
+R12
 !i10b 1
-!s100 J9JZU:^1;PfDzJ:AL5GCe1
+!s100 FEm6D@iQliQ09JZl<];HT3
 R3
-Id`TMVk63IYW_MR<9__3UJ3
+IN`FZ?JMd]Hmj6INNGMPM62
 R4
 S1
 R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_request_block.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_request_block.sv
+w1688058896
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/w_id_generator.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/w_id_generator.sv
 !i122 18
-L0 42 323
+R14
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_request_block.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_request_block.sv|
+R13
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/w_id_generator.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/w_id_generator.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_response_block
+n@w_id_generator
+vwrite_channel_delayer
 R1
-R2
+R12
 !i10b 1
-!s100 QkSFAUQRFmoJY57Ulk3]i3
+!s100 ;T8V@mn>ffY5j:bMFoLB=3
 R3
-I[jZmWG[j<H8c7[zlfHiaP3
+IEoHJYjl4D8@;7583g0XOz2
 R4
 S1
 R0
 R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_response_block.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_response_block.sv
+8/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/write_channel_delayer.sv
+F/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/write_channel_delayer.sv
 !i122 19
-L0 42 306
+L0 2 59
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_response_block.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_response_block.sv|
+R13
+!s107 /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/write_channel_delayer.sv|
+!s90 -quiet|-sv|-suppress|2583|-work|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/modelsim_libs/axi_node_lib|+incdir+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/.|/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/vsim/..//ips/axi/axi_node/write_channel_delayer.sv|
 !i113 1
 R8
 R9
 R10
-vaxi_RR_Flag_Req
-R1
-R2
-!i10b 1
-!s100 l9D39PXQjgBAbY2He>WXZ2
-R3
-I>ia[[@^gYFI]Wc:lm0K7`0
-R4
-S1
-R0
-R5
-8/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_RR_Flag_Req.sv
-F/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_RR_Flag_Req.sv
-!i122 20
-L0 43 32
-R6
-r1
-!s85 0
-31
-R7
-!s107 /home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_RR_Flag_Req.sv|
-!s90 -quiet|-sv|-suppress|2583|-work|/home/ahmed98/pulpino/vsim/modelsim_libs/axi_node_lib|+incdir+/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/.|/home/ahmed98/pulpino/vsim/..//ips/axi/axi_node/axi_RR_Flag_Req.sv|
-!i113 1
-R8
-R9
-R10
-naxi_@r@r_@flag_@req

@@ -1,14 +1,22 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/apps/bench/crc32.c" "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/bench/CMakeFiles/perfbench.extras.dir/crc32.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahmed98/pulpino/sw/apps/bench/crc32.c" "apps/bench/CMakeFiles/perfbench.extras.dir/crc32.c.o" "gcc" "apps/bench/CMakeFiles/perfbench.extras.dir/crc32.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../libs/sys_lib/inc"
+  "../libs/Arduino_lib/core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/inc"
+  "../libs/bench_lib/inc"
+  "../libs/stdio_lib/inc"
+  "../libs/string_lib/inc"
+  "../apps/bench/."
   )
 
 # Targets to which this target links.

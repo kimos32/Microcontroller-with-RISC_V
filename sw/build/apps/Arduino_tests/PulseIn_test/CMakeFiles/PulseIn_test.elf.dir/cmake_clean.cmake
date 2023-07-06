@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PulseIn_test.elf.dir/PulseIn_test.cpp.o"
-  "CMakeFiles/PulseIn_test.elf.dir/PulseIn_test.cpp.o.d"
   "PulseIn_test.elf"
   "PulseIn_test.elf.pdb"
 )

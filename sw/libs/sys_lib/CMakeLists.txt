@@ -3,6 +3,7 @@ set(SOURCES
     src/gpio.c
     src/int.c
     src/spi.c
+    src/usb.c
     src/timer.c
     src/uart.c
     src/utils.c
@@ -20,6 +21,7 @@ set(HEADERS
     inc/uart.h
     inc/utils.h
     inc/i2c.h
+    inc/usb.h
     )
 
 include_directories(inc/)

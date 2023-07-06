@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testShufflePack.elf.dir/testShufflePack.c.o"
-  "CMakeFiles/testShufflePack.elf.dir/testShufflePack.c.o.d"
   "testShufflePack.elf"
   "testShufflePack.elf.pdb"
 )

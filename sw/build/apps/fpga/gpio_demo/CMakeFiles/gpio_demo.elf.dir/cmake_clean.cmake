@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gpio_demo.elf.dir/main.c.o"
-  "CMakeFiles/gpio_demo.elf.dir/main.c.o.d"
   "gpio_demo.elf"
   "gpio_demo.elf.pdb"
 )

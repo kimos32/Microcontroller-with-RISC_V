@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/matrixMul8.elf.dir/matrixMul.c.o"
-  "CMakeFiles/matrixMul8.elf.dir/matrixMul.c.o.d"
   "matrixMul8.elf"
   "matrixMul8.elf.pdb"
 )

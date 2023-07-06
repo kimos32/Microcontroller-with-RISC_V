@@ -1,16 +1,35 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/libs/Arduino_lib/separate_libs/src/twi.c" "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/twi.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahmed98/pulpino/sw/libs/Arduino_lib/separate_libs/src/twi.c" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/twi.c.o" "gcc" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/twi.c.o.d"
-  "/home/ahmed98/pulpino/sw/libs/Arduino_lib/separate_libs/src/SPI.cpp" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o" "gcc" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o.d"
-  "/home/ahmed98/pulpino/sw/libs/Arduino_lib/separate_libs/src/Wire.cpp" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o" "gcc" "libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../libs/sys_lib/inc"
+  "../libs/Arduino_lib/core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/inc"
+  "../libs/Arduino_lib/separate_libs/../core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/../../sys_lib/inc"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/libs/Arduino_lib/separate_libs/src/SPI.cpp" "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o"
+  "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/libs/Arduino_lib/separate_libs/src/Wire.cpp" "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/Arduino_lib/separate_libs/CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../libs/sys_lib/inc"
+  "../libs/Arduino_lib/core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/inc"
+  "../libs/Arduino_lib/separate_libs/../core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/../../sys_lib/inc"
   )
 
 # Targets to which this target links.

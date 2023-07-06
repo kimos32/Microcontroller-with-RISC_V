@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testDebug.elf.dir/main.c.o"
-  "CMakeFiles/testDebug.elf.dir/main.c.o.d"
   "testDebug.elf"
   "testDebug.elf.pdb"
 )

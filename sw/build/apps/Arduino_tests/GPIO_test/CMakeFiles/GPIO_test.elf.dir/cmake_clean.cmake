@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GPIO_test.elf.dir/GPIO_test.cpp.o"
-  "CMakeFiles/GPIO_test.elf.dir/GPIO_test.cpp.o.d"
   "GPIO_test.elf"
   "GPIO_test.elf.pdb"
 )

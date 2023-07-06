@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testVecCmp.elf.dir/testVecCmp.c.o"
-  "CMakeFiles/testVecCmp.elf.dir/testVecCmp.c.o.d"
   "testVecCmp.elf"
   "testVecCmp.elf.pdb"
 )

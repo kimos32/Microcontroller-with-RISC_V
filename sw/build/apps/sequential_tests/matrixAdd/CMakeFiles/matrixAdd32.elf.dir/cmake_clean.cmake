@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/matrixAdd32.elf.dir/matrixAdd.c.o"
-  "CMakeFiles/matrixAdd32.elf.dir/matrixAdd.c.o.d"
   "matrixAdd32/matrixAdd32.elf"
   "matrixAdd32/matrixAdd32.elf.pdb"
 )

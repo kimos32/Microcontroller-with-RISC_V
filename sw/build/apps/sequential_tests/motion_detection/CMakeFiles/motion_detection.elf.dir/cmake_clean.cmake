@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motion_detection.elf.dir/motion_detection.c.o"
-  "CMakeFiles/motion_detection.elf.dir/motion_detection.c.o.d"
   "motion_detection.elf"
   "motion_detection.elf.pdb"
 )

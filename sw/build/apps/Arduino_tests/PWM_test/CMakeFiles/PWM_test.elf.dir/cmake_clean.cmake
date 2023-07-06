@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PWM_test.elf.dir/PWM_test.cpp.o"
-  "CMakeFiles/PWM_test.elf.dir/PWM_test.cpp.o.d"
   "PWM_test.elf"
   "PWM_test.elf.pdb"
 )

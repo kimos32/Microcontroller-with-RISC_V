@@ -12,7 +12,7 @@
 #include "pulpino.h"
 #include "utils.h"
 
-void fpu_send(const uint32_t* num_1, const uint32_t* num_2, const uint32_t* num_3){
+void fpu_send(const int* num_1, const int* num_2, const int* num_3){
 
 *(volatile unsigned int*)(FPU_REG_OP_A) = *num_1;
 *(volatile unsigned int*)(FPU_REG_OP_B) = *num_2;
@@ -20,9 +20,9 @@ void fpu_send(const uint32_t* num_1, const uint32_t* num_2, const uint32_t* num_
 };
 
 
-uint32_t fpu_getuint32(){
+int fpu_getuint32(){
 
-return *(volatile int*)FPU_REG_RESULT;
+return *(volatile int*) FPU_REG_RESULT;
 
 };
 

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boot_code.elf.dir/boot_code.c.o"
-  "CMakeFiles/boot_code.elf.dir/boot_code.c.o.d"
   "boot_code.elf"
   "boot_code.elf.pdb"
 )

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wire_test.elf.dir/wire_test.cpp.o"
-  "CMakeFiles/wire_test.elf.dir/wire_test.cpp.o.d"
   "wire_test.elf"
   "wire_test.elf.pdb"
 )

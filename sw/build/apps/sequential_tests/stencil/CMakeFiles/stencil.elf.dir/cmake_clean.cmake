@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/stencil.elf.dir/stencil.c.o"
-  "CMakeFiles/stencil.elf.dir/stencil.c.o.d"
   "stencil.elf"
   "stencil.elf.pdb"
 )

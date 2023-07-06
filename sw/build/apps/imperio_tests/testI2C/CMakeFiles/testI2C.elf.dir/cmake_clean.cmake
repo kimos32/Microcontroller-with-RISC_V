@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testI2C.elf.dir/testI2C.c.o"
-  "CMakeFiles/testI2C.elf.dir/testI2C.c.o.d"
   "testI2C.elf"
   "testI2C.elf.pdb"
 )

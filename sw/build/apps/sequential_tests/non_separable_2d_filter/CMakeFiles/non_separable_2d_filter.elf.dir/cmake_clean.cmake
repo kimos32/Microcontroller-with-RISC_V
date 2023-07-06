@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/non_separable_2d_filter.elf.dir/non_separable_2d_filter.c.o"
-  "CMakeFiles/non_separable_2d_filter.elf.dir/non_separable_2d_filter.c.o.d"
   "non_separable_2d_filter.elf"
   "non_separable_2d_filter.elf.pdb"
 )

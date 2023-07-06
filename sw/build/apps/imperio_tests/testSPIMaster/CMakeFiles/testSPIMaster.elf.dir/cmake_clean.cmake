@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testSPIMaster.elf.dir/testSPIMaster.c.o"
-  "CMakeFiles/testSPIMaster.elf.dir/testSPIMaster.c.o.d"
   "testSPIMaster.elf"
   "testSPIMaster.elf.pdb"
 )

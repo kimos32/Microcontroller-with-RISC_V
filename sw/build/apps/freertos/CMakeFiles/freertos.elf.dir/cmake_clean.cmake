@@ -1,16 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/freertos.elf.dir/Source/list.c.o"
-  "CMakeFiles/freertos.elf.dir/Source/list.c.o.d"
   "CMakeFiles/freertos.elf.dir/Source/portable/GCC/RI5CY/port.c.o"
-  "CMakeFiles/freertos.elf.dir/Source/portable/GCC/RI5CY/port.c.o.d"
   "CMakeFiles/freertos.elf.dir/Source/portable/MemMang/heap_1.c.o"
-  "CMakeFiles/freertos.elf.dir/Source/portable/MemMang/heap_1.c.o.d"
   "CMakeFiles/freertos.elf.dir/Source/queue.c.o"
-  "CMakeFiles/freertos.elf.dir/Source/queue.c.o.d"
   "CMakeFiles/freertos.elf.dir/Source/tasks.c.o"
-  "CMakeFiles/freertos.elf.dir/Source/tasks.c.o.d"
   "CMakeFiles/freertos.elf.dir/main.c.o"
-  "CMakeFiles/freertos.elf.dir/main.c.o.d"
   "freertos.elf"
   "freertos.elf.pdb"
 )

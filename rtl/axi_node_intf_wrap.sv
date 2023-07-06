@@ -13,8 +13,8 @@
 
 module axi_node_intf_wrap
   #(
-    parameter NB_MASTER      = 4,
-    parameter NB_SLAVE       = 4,
+    parameter NB_MASTER      = 5,
+    parameter NB_SLAVE       = 5,
     parameter AXI_ADDR_WIDTH = 32,
     parameter AXI_DATA_WIDTH = 32,
     parameter AXI_ID_WIDTH   = 10,

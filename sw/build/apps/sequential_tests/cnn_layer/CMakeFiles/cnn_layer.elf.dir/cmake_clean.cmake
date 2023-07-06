@@ -1,10 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cnn_layer.elf.dir/cnn_kernels.c.o"
-  "CMakeFiles/cnn_layer.elf.dir/cnn_kernels.c.o.d"
   "CMakeFiles/cnn_layer.elf.dir/cnn_kernels_fused.c.o"
-  "CMakeFiles/cnn_layer.elf.dir/cnn_kernels_fused.c.o.d"
   "CMakeFiles/cnn_layer.elf.dir/cnn_layer.c.o"
-  "CMakeFiles/cnn_layer.elf.dir/cnn_layer.c.o.d"
   "cnn_layer.elf"
   "cnn_layer.elf.pdb"
 )

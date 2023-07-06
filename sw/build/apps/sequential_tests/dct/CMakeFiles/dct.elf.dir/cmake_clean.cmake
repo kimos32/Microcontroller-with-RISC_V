@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dct.elf.dir/dct.c.o"
-  "CMakeFiles/dct.elf.dir/dct.c.o.d"
   "dct.elf"
   "dct.elf.pdb"
 )

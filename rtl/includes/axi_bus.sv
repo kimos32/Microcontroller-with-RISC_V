@@ -55,7 +55,7 @@ interface AXI_BUS
   logic [3:0]                ar_qos;
   logic [AXI_ID_WIDTH-1:0]   ar_id;
   logic [AXI_USER_WIDTH-1:0] ar_user;
-  logic                      ar_ready;
+  wire                       ar_ready;
   logic                      ar_valid;
 
   logic                      w_valid;
@@ -63,15 +63,15 @@ interface AXI_BUS
   logic [AXI_STRB_WIDTH-1:0] w_strb;
   logic [AXI_USER_WIDTH-1:0] w_user;
   logic                      w_last;
-  logic                      w_ready;
+  wire                       w_ready;
 
-  logic [AXI_DATA_WIDTH-1:0] r_data;
+  wire  [AXI_DATA_WIDTH-1:0] r_data;
   logic [1:0]                r_resp;
   logic                      r_last;
   logic [AXI_ID_WIDTH-1:0]   r_id;
   logic [AXI_USER_WIDTH-1:0] r_user;
   logic                      r_ready;
-  logic                      r_valid;
+  wire                       r_valid;
 
   logic [1:0]                b_resp;
   logic [AXI_ID_WIDTH-1:0]   b_id;

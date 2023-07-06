@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rv_basic.elf.dir/basic.c.o"
-  "CMakeFiles/rv_basic.elf.dir/basic.c.o.d"
   "rv_basic.elf"
   "rv_basic.elf.pdb"
 )

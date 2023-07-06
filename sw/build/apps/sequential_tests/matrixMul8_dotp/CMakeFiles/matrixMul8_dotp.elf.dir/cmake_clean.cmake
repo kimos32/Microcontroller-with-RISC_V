@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/matrixMul8_dotp.elf.dir/matmul_kernels.c.o"
-  "CMakeFiles/matrixMul8_dotp.elf.dir/matmul_kernels.c.o.d"
   "CMakeFiles/matrixMul8_dotp.elf.dir/matrixMul.c.o"
-  "CMakeFiles/matrixMul8_dotp.elf.dir/matrixMul.c.o.d"
   "matrixMul8_dotp.elf"
   "matrixMul8_dotp.elf.pdb"
 )

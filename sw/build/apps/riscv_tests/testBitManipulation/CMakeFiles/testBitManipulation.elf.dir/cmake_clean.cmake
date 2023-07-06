@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testBitManipulation.elf.dir/testBitManipulation.c.o"
-  "CMakeFiles/testBitManipulation.elf.dir/testBitManipulation.c.o.d"
   "testBitManipulation.elf"
   "testBitManipulation.elf.pdb"
 )

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.fir.elf.dir/fir.c.o"
-  "CMakeFiles/perfbench.fir.elf.dir/fir.c.o.d"
   "CMakeFiles/perfbench.fir.elf.dir/fir_test.c.o"
-  "CMakeFiles/perfbench.fir.elf.dir/fir_test.c.o.d"
   "perfbench.fir.elf"
   "perfbench.fir.elf.pdb"
 )

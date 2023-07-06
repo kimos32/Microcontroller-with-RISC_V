@@ -1,14 +1,18 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/ref/crt0.riscv.S" "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/CMakeFiles/crt0.dir/ref/crt0.riscv.S.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahmed98/pulpino/sw/ref/crt0.riscv.S" "CMakeFiles/crt0.dir/ref/crt0.riscv.S.o" "gcc" "CMakeFiles/crt0.dir/ref/crt0.riscv.S.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../libs/sys_lib/inc"
+  "../libs/Arduino_lib/core_libs/inc"
+  "../libs/Arduino_lib/separate_libs/inc"
   )
 
 # Targets to which this target links.

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pooling.elf.dir/pool_kernels.c.o"
-  "CMakeFiles/pooling.elf.dir/pool_kernels.c.o.d"
   "CMakeFiles/pooling.elf.dir/pooling.c.o"
-  "CMakeFiles/pooling.elf.dir/pooling.c.o.d"
   "pooling.elf"
   "pooling.elf.pdb"
 )

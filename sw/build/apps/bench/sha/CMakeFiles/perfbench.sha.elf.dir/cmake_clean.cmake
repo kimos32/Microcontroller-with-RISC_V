@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.sha.elf.dir/sha.c.o"
-  "CMakeFiles/perfbench.sha.elf.dir/sha.c.o.d"
   "CMakeFiles/perfbench.sha.elf.dir/sha_test.c.o"
-  "CMakeFiles/perfbench.sha.elf.dir/sha_test.c.o.d"
   "perfbench.sha.elf"
   "perfbench.sha.elf.pdb"
 )

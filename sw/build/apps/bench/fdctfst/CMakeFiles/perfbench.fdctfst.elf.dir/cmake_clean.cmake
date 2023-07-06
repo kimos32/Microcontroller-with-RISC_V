@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.fdctfst.elf.dir/fdctfst.c.o"
-  "CMakeFiles/perfbench.fdctfst.elf.dir/fdctfst.c.o.d"
   "CMakeFiles/perfbench.fdctfst.elf.dir/fdctfst_test.c.o"
-  "CMakeFiles/perfbench.fdctfst.elf.dir/fdctfst_test.c.o.d"
   "perfbench.fdctfst.elf"
   "perfbench.fdctfst.elf.pdb"
 )

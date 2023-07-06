@@ -1,17 +1,16 @@
-module FPU_Add2(OP1,OP2,add_select,sub_select,enable,Result,valid,clk,rstn);
+module FPU_Add2(OP1,OP2,add_select,sub_select,Result_comb,valid);
 
-input        clk,rstn;
+//input        clk,rstn;
 input [31:0] OP1;
 input [31:0] OP2;
 input        add_select;
 input        sub_select;
-input        enable;
 
 
-output reg [31:0] Result;
-output reg        valid;
+output      [31:0] Result_comb;
+output             valid;
 
-wire [31:0] Result_comb;
+
 
 
 //decomposition
@@ -168,19 +167,22 @@ assign Alu_result=(add_sub==1'b0)?shifted_Fraction + unshifted_Fraction:unshifte
 
 Normalize_add N1(normalize_enable,Alu_result,higher_Exponent,Exponent_normalized,Fraction_normalized);
 
-assign Result_comb={result_sign,Exponent_normalized,Fraction_normalized[22:0]};
+assign Result_comb=(add_select||sub_select)?{result_sign,Exponent_normalized,Fraction_normalized[22:0]}:32'b0;
+assign valid=(add_select||sub_select)?1'b1:1'b0;
 
-always@(negedge rstn or posedge clk)begin
+/*always@(negedge rstn or posedge clk)begin
    if(rstn==1'b0)begin
       Result<=32'b0;
       valid<=0;
    end
-   else if(enable||(add_select||sub_select)) begin
+   else if((add_select||sub_select)) begin
    	 Result<=Result_comb;
    	 valid<=1;
    end
    else begin
+   	 Result<=32'b0;
    	 valid<=0;
    end
 end
+*/
 endmodule

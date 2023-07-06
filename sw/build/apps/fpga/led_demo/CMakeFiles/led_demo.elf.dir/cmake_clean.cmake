@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/led_demo.elf.dir/main.c.o"
-  "CMakeFiles/led_demo.elf.dir/main.c.o.d"
   "led_demo.elf"
   "led_demo.elf.pdb"
 )

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/sys_lib/inc/pulpino.h
+
+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/ref/crt0.riscv.S
+pulpino.h
+/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/ref/pulpino.h
+

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testMisaligned.elf.dir/main.c.o"
-  "CMakeFiles/testMisaligned.elf.dir/main.c.o.d"
   "testMisaligned.elf"
   "testMisaligned.elf.pdb"
 )

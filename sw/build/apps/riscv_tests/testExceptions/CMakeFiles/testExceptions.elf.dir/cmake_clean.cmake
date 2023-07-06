@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testExceptions.elf.dir/main.c.o"
-  "CMakeFiles/testExceptions.elf.dir/main.c.o.d"
   "testExceptions.elf"
   "testExceptions.elf.pdb"
 )

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sudokusolver.elf.dir/sudokusolver.c.o"
-  "CMakeFiles/sudokusolver.elf.dir/sudokusolver.c.o.d"
   "sudokusolver.elf"
   "sudokusolver.elf.pdb"
 )

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmed98/pulpino/sw/apps/Arduino_tests
+# Install script for directory: /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/apps/Arduino_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,22 +32,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/ahmed98/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-objdump")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/GPIO_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/int_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/timer_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/PWM_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/UART_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/PulseIn_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/shift_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/wire_test/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/Arduino_tests/SPI_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/GPIO_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/int_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/timer_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/PWM_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/UART_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/PulseIn_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/shift_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/wire_test/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/Arduino_tests/SPI_test/cmake_install.cmake")
 
 endif()
 

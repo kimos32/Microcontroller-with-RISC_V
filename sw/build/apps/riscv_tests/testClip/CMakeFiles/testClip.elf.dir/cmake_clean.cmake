@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testClip.elf.dir/testClip.c.o"
-  "CMakeFiles/testClip.elf.dir/testClip.c.o.d"
   "testClip.elf"
   "testClip.elf.pdb"
 )

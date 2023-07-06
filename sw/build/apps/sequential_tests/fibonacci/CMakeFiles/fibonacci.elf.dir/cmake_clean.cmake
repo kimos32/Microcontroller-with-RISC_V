@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fibonacci.elf.dir/fibonacci.c.o"
-  "CMakeFiles/fibonacci.elf.dir/fibonacci.c.o.d"
   "fibonacci.elf"
   "fibonacci.elf.pdb"
 )

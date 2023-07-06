@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fpga_test.elf.dir/main.c.o"
-  "CMakeFiles/fpga_test.elf.dir/main.c.o.d"
   "fpga_test.elf"
   "fpga_test.elf.pdb"
 )

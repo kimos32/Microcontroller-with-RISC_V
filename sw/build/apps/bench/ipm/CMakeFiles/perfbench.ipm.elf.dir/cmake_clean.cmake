@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.ipm.elf.dir/ipm.c.o"
-  "CMakeFiles/perfbench.ipm.elf.dir/ipm.c.o.d"
   "CMakeFiles/perfbench.ipm.elf.dir/ipm_test.c.o"
-  "CMakeFiles/perfbench.ipm.elf.dir/ipm_test.c.o.d"
   "perfbench.ipm.elf"
   "perfbench.ipm.elf.pdb"
 )

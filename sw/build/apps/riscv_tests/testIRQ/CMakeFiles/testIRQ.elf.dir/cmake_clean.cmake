@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testIRQ.elf.dir/main.c.o"
-  "CMakeFiles/testIRQ.elf.dir/main.c.o.d"
   "testIRQ.elf"
   "testIRQ.elf.pdb"
 )

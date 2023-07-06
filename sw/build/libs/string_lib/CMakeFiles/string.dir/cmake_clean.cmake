@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/string.dir/src/qprintf.c.o"
-  "CMakeFiles/string.dir/src/qprintf.c.o.d"
   "libstring.a"
   "libstring.pdb"
 )

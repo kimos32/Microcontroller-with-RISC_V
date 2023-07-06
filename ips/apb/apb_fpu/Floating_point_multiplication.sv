@@ -1,16 +1,15 @@
-module FPU_MULT(clk,rstn,OP1,OP2,mult_select,enable,Result,valid);
+module FPU_MULT(clk,rstn,OP1,OP2,mult_select,Result_comb,valid);
 
-input clk,rstn;
+input        clk,rstn;
 input [31:0] OP1,OP2;
 input        mult_select;
-input        enable;
 
 
-output reg [31:0] Result;
-output reg        valid;
+
+output     [31:0] Result_comb;
+output            valid;
 
 
-wire [31:0] Result_comb;
 wire        sign1,sign2;
 wire [7:0]  Exponent1,Exponent2;
 wire [23:0] Fraction1,Fraction2;
@@ -30,8 +29,8 @@ reg  [11:0]  Fraction2_2nd_reg;
 
 /////////////////////Multiply Fractions///////////
 
-reg [47:0] Fraction_mult,Fraction_mult_reg;
-reg  [35:0] Fraction_mult_1st, Fraction_mult_1st_reg;
+reg [47:0] Fraction_mult;
+reg  [35:0] Fraction_mult_1st_comb, Fraction_mult_1st_reg;
 reg  [35:0] Fraction_mult_intermediate;
 reg  [47:0] Fraction_mult_shift;
 ///////////////////////Normalization ////////////////////
@@ -43,8 +42,10 @@ reg [7:0]  Exponent_normalized;
 
 reg sign_res,sign_reg;
 
-/////////
+/////////valid/////
+reg valid_1st;
 
+wire [31:0] Result_comb;
 
 
 ///Floating point decomposition
@@ -85,26 +86,36 @@ end
 
 always @(Fraction1,Fraction2_1st) begin
 
-   Fraction_mult_1st=Fraction1 * Fraction2_1st;
+   Fraction_mult_1st_comb=Fraction1 * Fraction2_1st;
 end
 
 
 
 always@(negedge rstn or posedge clk)begin
 if(!rstn)begin
-Fraction_mult_1st_reg<=0;
+Fraction_mult_1st_reg<=36'b0;
 sign_reg<=0;
 Exponent_add_reg<=0;
 Fraction2_2nd_reg<=0;
 Fraction1_reg<=0;
+valid_1st<=0;
 
 end
 else if(mult_select) begin
-  Fraction_mult_1st_reg<=Fraction_mult_1st;
+  Fraction_mult_1st_reg<=Fraction_mult_1st_comb;
   sign_reg<=sign_res;
   Exponent_add_reg<=Exponent_add;
   Fraction2_2nd_reg<=Fraction2_2nd;
   Fraction1_reg<=Fraction1;
+  valid_1st<=1;
+end
+else begin
+Fraction_mult_1st_reg<=36'b0;
+sign_reg<=0;
+Exponent_add_reg<=0;
+Fraction2_2nd_reg<=0;
+Fraction1_reg<=0;
+valid_1st<=0;  
 end
 
 
@@ -142,19 +153,8 @@ end
 
 
 ////////////Result////////
-assign Result_comb={sign_reg,Exponent_normalized,Fraction_normalized[22:0]};
+assign Result_comb=(mult_select)?{sign_reg,Exponent_normalized,Fraction_normalized[22:0]}:32'b0;
+assign valid=(mult_select)?valid_1st:1'b0;
 
-always@(negedge rstn or posedge clk)begin
-   if(rstn==1'b0)begin
-      Result<=32'b0;
-      valid<=0;
-   end
-   else if(enable&&mult_select) begin
-       Result<=Result_comb;
-       valid<=1;
-   end
-   else begin
-      valid<=0;
-   end
-end
+
 endmodule

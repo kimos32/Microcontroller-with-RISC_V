@@ -49,6 +49,28 @@ vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/AXI_2_APB_32.sv 
 vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/axi2apb.sv || goto error
 vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/axi2apb32.sv || goto error
 
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/bridge.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/AXI_to_APB_bridge.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/concatenator.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/deconcatenator.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/fifo_top.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/MUXs.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/APB_master.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/rinc_bottom_generator.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/fifomem.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/rptr_empty.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/sync_r2w.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/sync_w2r.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/wptr_full.sv || goto error
+
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_READ.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_RG_WRITE.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_READ.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/AXI_AG_WRITE.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Read_FIFO.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/Write_FIFO.sv || goto error
+vlog -quiet -sv -suppress 2583 -work ${LIB_PATH}     ${IP_PATH}/FINAL_BRIDGE/FINAL_AXI_SLAVE_CORE/top_module.sv || goto error
+
 echo "${Cyan}--> ${IP} compilation complete! ${NC}"
 exit 0
 

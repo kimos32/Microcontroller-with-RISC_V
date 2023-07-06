@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/UART_test.elf.dir/UART_test.cpp.o"
-  "CMakeFiles/UART_test.elf.dir/UART_test.cpp.o.d"
   "UART_test.elf"
   "UART_test.elf.pdb"
 )

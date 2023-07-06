@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmed98/pulpino/sw
+# Install script for directory: /home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,18 +32,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/ahmed98/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-objdump")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ahmed98/pulpino/sw/build/libs/string_lib/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/libs/sys_lib/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/libs/Arduino_lib/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/libs/bench_lib/cmake_install.cmake")
-  include("/home/ahmed98/pulpino/sw/build/apps/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/string_lib/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/sys_lib/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/Arduino_lib/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/libs/bench_lib/cmake_install.cmake")
+  include("/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/apps/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ahmed98/pulpino/sw/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nadeen/Documents/home/ahmed98/pulpino_nadeen/sw/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testALUExt.elf.dir/testALUExt.c.o"
-  "CMakeFiles/testALUExt.elf.dir/testALUExt.c.o.d"
   "testALUExt.elf"
   "testALUExt.elf.pdb"
 )

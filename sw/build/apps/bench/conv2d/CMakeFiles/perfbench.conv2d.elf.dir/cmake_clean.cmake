@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/perfbench.conv2d.elf.dir/conv2d.c.o"
-  "CMakeFiles/perfbench.conv2d.elf.dir/conv2d.c.o.d"
   "CMakeFiles/perfbench.conv2d.elf.dir/conv2d_test.c.o"
-  "CMakeFiles/perfbench.conv2d.elf.dir/conv2d_test.c.o.d"
   "perfbench.conv2d.elf"
   "perfbench.conv2d.elf.pdb"
 )

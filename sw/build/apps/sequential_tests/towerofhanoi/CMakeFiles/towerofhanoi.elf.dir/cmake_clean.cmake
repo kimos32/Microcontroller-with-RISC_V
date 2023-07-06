@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/towerofhanoi.elf.dir/towerofhanoi.c.o"
-  "CMakeFiles/towerofhanoi.elf.dir/towerofhanoi.c.o.d"
   "towerofhanoi.elf"
   "towerofhanoi.elf.pdb"
 )
